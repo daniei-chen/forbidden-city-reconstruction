@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.blend
+*.blend[0-9]*
+*.glb
+*.zip
+*.mp4
+*.log
+/renders/
+/exports/
+/build_metrics.json
+/source/textures/
+/source/references/
