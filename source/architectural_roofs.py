@@ -15,15 +15,18 @@ from mesh_tools import Batch, collection
 def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12.,
                eave=12., rise=6., kind="hip", stop=1., tiles=False, pitch=.36,
                beasts=0, grey=False, green=False, detail=1, terminal_height=None,
-               soffit=True, eave_lift=None, sculpted=False, ridge_length=None):
+               soffit=True, eave_lift=None, sculpted=False, ridge_length=None,
+               ridge_terminals=True, gable_ends=True, border_glaze=None,
+               pyramid_finial=True):
     group=collection(name,target)
     substrate=pal.grey if grey else pal.green if green else pal.roof
-    clay=pal.grey_clay if grey else pal.green_clay if green else pal.tiles[1]
+    clay=border_glaze or (pal.grey_clay if grey else pal.green_clay if green else pal.tiles[1])
     shell=Batch(origin,yaw); ridges=Batch(origin,yaw); tiling=Batch(origin,yaw)
     hw,hd=width/2,depth/2
     pyramid=kind=="pyramid"
-    gable=kind in ("gable","xieshan")
-    ridge_half=0.0 if pyramid else hw if kind=="gable" else hw*.80 if kind=="xieshan" else max(.35,hw-hd*.76)
+    straight_gable=kind in ("gable","juanpeng")
+    gable=straight_gable or kind=="xieshan"
+    ridge_half=0.0 if pyramid else hw if straight_gable else hw*.80 if kind=="xieshan" else max(.35,hw-hd*.76)
     if ridge_length is not None and not pyramid:
         if not 0 < ridge_length <= width:
             raise ValueError('The ridge must fit within the roof width.')
@@ -31,8 +34,16 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
     upturn=min(.84,depth*.044) if eave_lift is None else eave_lift
 
     def level(t,u):
-        lift=upturn*(abs(u)**8)*(1-t)**2 if kind!='gable' else 0
-        return eave+rise*(.10*t+.90*t**1.71)+lift+.07*(1-t)**14
+        lift=upturn*(abs(u)**8)*(1-t)**2 if not straight_gable or eave_lift is not None else 0
+        profile=.10*t+.90*t**1.71
+        if kind=='juanpeng' and t>.72:
+            # Tangent continuity at the join and a horizontal tangent at the crown.
+            a=.72
+            v=.10*a+.90*a**1.71
+            d=(.10+.90*1.71*a**.71)*(1-a)
+            s=(t-a)/(1-a)
+            profile=(2*s**3-3*s*s+1)*v+(s**3-2*s*s+s)*d-2*s**3+3*s*s
+        return eave+rise*profile+lift+.07*(1-t)**14
 
     def half_span(t):
         tt=min(t/.38,1) if kind=="xieshan" else t
@@ -49,7 +60,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
             xx=hw+(ridge_half-hw)*t
         return Vector((sgn*xx,u*hd*(1-t),level(t,u)))
 
-    panels=(0,1) if kind=="gable" else (0,1,2,3)
+    panels=(0,1) if straight_gable else (0,1,2,3)
     for side in panels:
         end=min(stop,.38) if kind=="xieshan" and side>=2 else stop
         across=max(6,min(56,math.ceil((width if side<2 else depth)/1.1)))
@@ -108,7 +119,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                     margin=abs(offset)+spacing*(.27 if is_cap else .38)
                     if side>=2:
                         last=max(0.,1-margin/hd)
-                    elif kind=='gable' or margin<=ridge_half:
+                    elif straight_gable or margin<=ridge_half:
                         last=end
                     else:
                         last=(hw-margin)/(hw-ridge_half)*(.38 if kind=='xieshan' else 1.)
@@ -142,17 +153,22 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                                 a,b,c=(Vector(vv[n]) for n in ff[:3])
                                 if (b-a).cross(c-a).dot(normal)<0:ff=tuple(reversed(ff))
                                 faces.append(ff)
-                        tiling.add(vv,faces,base,smooth=True)
+                        material=base
+                        if border_glaze and (row==0 or abs(offset)>span-spacing*2 or
+                                            (not straight_gable and last<end-.004 and row==rows-1)):
+                            material=border_glaze
+                        tiling.add(vv,faces,material,smooth=True)
                     p,tangent,across,normal=frame(offset,0.)
                     if is_cap:
                         radius=spacing*.33;c=p-tangent*.039+normal*(.06+spacing*.18)
-                        tiling.rod(c-tangent*.020,c+tangent*.048,radius,base,sides=12 if detail>1 else 9)
+                        face_glaze=border_glaze or base
+                        tiling.rod(c-tangent*.020,c+tangent*.048,radius,face_glaze,sides=12 if detail>1 else 9)
                         if detail>1:
                             tiling.rod(c-tangent*.032,c-tangent*.022,radius*.76,pal.darktile,sides=12)
                             for petal in range(5):
                                 angle=petal*math.tau/5
                                 q=c-tangent*.035+(across*math.cos(angle)+normal*math.sin(angle))*radius*.40
-                                tiling.ellipsoid(q,(.018,.013,.022),base,sides=5,rings=3)
+                                tiling.ellipsoid(q,(.018,.013,.022),face_glaze,sides=5,rings=3)
                     else:
                         # Pointed drip tiles hang between the round end disks.
                         q=p-tangent*.063
@@ -166,7 +182,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                             ridges.beam(rafter_a+tangent*.004,rafter_a-tangent*.020,.061,.069,pal.giltpaint)
 
     # Gable timber infill is present only above the lower hipped edge of a歇山顶.
-    if gable and stop>=.999:
+    if gable and stop>=.999 and gable_ends:
         t=.38 if kind=="xieshan" else 0.
         yy=hd*(1-t); xx=half_span(t)
         for sign in (-1,1):
@@ -188,7 +204,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
         c,s=math.cos(yaw),math.sin(yaw)
         def world(p):
             return (origin[0]+c*p.x-s*p.y,origin[1]+s*p.x+c*p.y,origin[2]+p.z)
-    for sx in (() if kind=='gable' else (-1,1)):
+    for sx in (() if straight_gable else (-1,1)):
         for sy in (-1,1):
             end=min(stop,.38) if kind=="xieshan" else stop
             pts=[tuple(position(0 if sy<0 else 1,sx,end*i/24)+Vector((0,0,.055))) for i in range(25)]
@@ -222,15 +238,15 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                     ridge_guardian(ridges,tuple(p),sx,sy,s,clay,kind=k)
 
     if stop>=.999:
-        if pyramid:
+        if pyramid and pyramid_finial:
             ridges.lathe(0,0,((.31,eave+rise-.02),(.25,eave+rise+.12),(.13,eave+rise+.20),
                               (.25,eave+rise+.43),(.19,eave+rise+.62),(.03,eave+rise+.82)),pal.gold,sides=18)
-        else:
+        elif not pyramid and kind!='juanpeng':
             z=eave+rise
             ridges.box((0,0,z+.14),(2*ridge_half,.39,.36),clay)
             ridges.box((0,0,z+.38),(2*ridge_half,.26,.15),clay)
             ridges.path([(-ridge_half-.14,0,z+.46),(ridge_half+.14,0,z+.46)],.085,clay,sides=10)
-            for end in (-1,1):
+            for end in ((-1,1) if ridge_terminals else ()):
                 height=terminal_height or (1.8 if width>40 else .97)
                 if sculpted:
                     local=Vector((end*ridge_half,0,z+.16))

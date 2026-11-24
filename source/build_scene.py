@@ -25,6 +25,8 @@ from palace_materials import palette
 from palace_architecture import hall, railing, stairs, arch_block, bronze_lion, ritual_vessel, corner_tower, meridian_platform
 from osm_site import Site, tags, number, rectangle, E0, N0, ANGLE, CA, SA
 from wenyuan_reconstruction import REF as WENYUAN_OSM_ID, build_wenyuan
+from garden_bridge_pavilions import STUDIES, build_pavilion, garden_materials, plan_from_map
+from garden_context import HALLS, garden_context
 
 ROOT=Path(__file__).resolve().parents[1]
 RENDERS=ROOT/'renders';EXPORTS=ROOT/'exports'
@@ -114,7 +116,7 @@ def local_roof(batch,geom,eave,rise,pal,*,kind='hip',grey=False,green=False,way=
                            pal.door if kind=='gable' else edge,way=way)
 
 
-def terrain(site,pal,parent):
+def terrain(site,pal,parent,*, detailed_pools=()):
     ground=collection('01 · 场地 / metric site and water',parent)
     moat=site.geom('4845030').difference(site.boundary.buffer(-.4))
     river_parts=[]
@@ -141,8 +143,9 @@ def terrain(site,pal,parent):
             line_boxes(water,list(line.coords),-.34,-.11,.48,pal.bank)
     water.finish('筒子河 · 原始水面轮廓及石驳岸',ground,properties={'osm_way':'4845030'})
     paving=Batch();streams=Batch();parks=Batch()
-    streams.solid_xy(river,-3.0,-.74,pal.bank,top=pal.stream)
-    for p in polygons(river):
+    generic_water=unary_union([g for ref,g in river_parts if ref not in detailed_pools])
+    streams.solid_xy(generic_water,-3.0,-.74,pal.bank,top=pal.stream)
+    for p in polygons(generic_water):
         line_boxes(streams,list(p.exterior.coords),-1.2,.16,.45,pal.bank)
     rail=Batch()
     crossings=unary_union([site.geom(ref).buffer(3.8) for ref in ('41439019','41439020','41439021','41439022','41439023')])
@@ -174,9 +177,9 @@ CUSTOM_RELS=['8854043','8854044','8854310','8854434','8854352','8854507',
              '8858781','8858912','8858938','8858328','8858329','8858355','8858356']
 
 
-def generic_buildings(site,pal,parent):
+def generic_buildings(site,pal,parent,*, detailed=()):
     group=collection('02 · 宫院群 / individual source footprints and roof parts',parent)
-    skip={WENYUAN_OSM_ID}
+    skip={WENYUAN_OSM_ID,*detailed}
     for rid in CUSTOM_RELS:skip.update(site.members(rid))
     skip.update(('638156455','638156470','638156753','638156765','638206921','638206922','638206928','638206935'))
     # Corner tower footprints are superseded by the separate cross-plan assemblies.
@@ -539,7 +542,10 @@ def lighting():
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--preview',action='store_true');parser.add_argument('--export',action='store_true')
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--preview',action='store_true')
+    parser.add_argument('--export',action='store_true')
+    parser.add_argument('--garden',action='store_true',help='Build the four detailed northern garden structures and pools.')
     options=parser.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
     RENDERS.mkdir(exist_ok=True)
     EXPORTS.mkdir(exist_ok=True)
@@ -550,13 +556,22 @@ def main():
     scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=1.0;scene.unit_settings.length_unit='METERS'
     site=Site();pal=palette();root=collection('紫禁城 · EDITABLE 3D MASTER')
     log('Source loaded; site %.1f square metres'%site.boundary.area)
-    metrics=terrain(site,pal,root)
-    metrics['generic_source_meshes']=generic_buildings(site,pal,root)
+    garden_ids={s.way for s in STUDIES}|{hall[1] for hall in HALLS} if options.garden else ()
+    garden_pools={s.pond for s in STUDIES} if options.garden else ()
+    metrics=terrain(site,pal,root,detailed_pools=garden_pools)
+    metrics['generic_source_meshes']=generic_buildings(site,pal,root,detailed=garden_ids)
     metrics['terrace_stairs']=three_hall_terrace(site,pal,root)
     important_halls(site,pal,root)
     perimeter_and_gates(site,pal,root);log('Gates, walls and corner towers complete')
     metrics['mapped_trees']=bridges_and_trees(site,pal,root)
     _, metrics['wenyuan']=build_wenyuan(root,pal)
+    if options.garden:
+        group=collection('御花园 · 浮碧亭与澄瑞亭',root)
+        plans=[plan_from_map(site,study) for study in STUDIES]
+        materials=garden_materials(pal)
+        pavilions=[build_pavilion(study,plan,group,materials) for study,plan in zip(STUDIES,plans)]
+        metrics['imperial_garden']={'pavilions':[p.name for p in pavilions],
+                                    'context':garden_context(site,plans,group,materials)}
     aerial_reference(site,root);lighting()
     camera('01 · 全城鸟瞰 / overview',(-650,-1030,1250),(0,-3,4),ortho=1670)
     camera('02 · 太和殿 / architectural portrait',(-89,-221,8.3),(-4,-116,15),lens=46)
@@ -569,6 +584,10 @@ def main():
     wx, wy=metrics['wenyuan']['placement_metres']
     camera('09 · 文渊阁 / Wenyuan Ge',(wx-30,wy-37,9.4),(wx,wy,8.1),lens=40)
     scene.camera=bpy.data.objects['02 · 太和殿 / architectural portrait']
+    if options.garden:
+        plan=plans[0]
+        camera('40 · 浮碧亭 / Fubi pool and pavilion',plan.world(13.98,-10.02,2.17),plan.world(0,-.74,3.64),lens=26.2)
+        scene.camera=bpy.data.objects['40 · 浮碧亭 / Fubi pool and pavilion']
     for area in bpy.context.screen.areas if bpy.context.screen else []:
         if area.type=='VIEW_3D':
             area.spaces.active.region_3d.view_perspective='CAMERA'
@@ -589,19 +608,21 @@ def main():
         if font.users==0:bpy.data.fonts.remove(font)
     bpy.context.preferences.filepaths.save_version=2
     bpy.ops.file.pack_all()
-    bpy.ops.wm.save_as_mainfile(filepath=str(BLEND),compress=True)
+    output=ROOT/'The_Forbidden_City_Imperial_Garden_Base.blend' if options.garden else BLEND
+    bpy.ops.wm.save_as_mainfile(filepath=str(output),compress=True)
     (ROOT/'build_metrics.json').write_text(json.dumps(metrics,indent=2,ensure_ascii=False),'utf-8')
-    log('SAVED '+str(BLEND)+'; '+str(metrics))
+    log('SAVED '+str(output)+'; '+str(metrics))
     if options.export:
         # Visible architecture only; exclude the hidden reference plane.
         bpy.ops.object.select_all(action='DESELECT')
         for obj in meshes:obj.select_set(True)
-        bpy.ops.export_scene.gltf(filepath=str(EXPORTS/'Forbidden_City_1to1_Architectural_Reconstruction.glb'),export_format='GLB',
+        export_name='Forbidden_City_Imperial_Garden_Base.glb' if options.garden else 'Forbidden_City_1to1_Architectural_Reconstruction.glb'
+        bpy.ops.export_scene.gltf(filepath=str(EXPORTS/export_name),export_format='GLB',
                                   use_selection=True,export_apply=True,export_yup=True,export_extras=True,export_materials='EXPORT')
         log('GLB export complete')
     if options.preview:
         scene.render.resolution_x=1100;scene.render.resolution_y=825;scene.cycles.samples=20
-        scene.render.filepath=str(RENDERS/'taihe_preview_v3.png')
+        scene.render.filepath=str(RENDERS/('fubi_garden_preview.png' if options.garden else 'taihe_preview_v3.png'))
         bpy.ops.render.render(write_still=True);log('First architectural preview complete')
 
 
