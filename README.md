@@ -4,6 +4,8 @@
 
 **[下载可编辑的 Blender 工程](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/latest)**。用 Blender 4.5 打开 `.blend` 即可查看、测量和编辑，场景单位为米。主场景覆盖宫墙、护城河和宫院，可从顶部场景选择器切换到文华殿、浴德堂、澄瑞亭和堆秀山的四段漫游。
 
+[![千秋亭的亚字台基、踏道与重檐](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/download/v0.1.0/Qianqiu_Pavilion.png)](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.1.0)
+
 公开工程收录了太和殿内景、文渊阁、文华殿和武英殿组群、浴德堂及御花园北部的细化模型。万春亭、千秋亭包含亚字台基、四面踏道、重檐与可仰视的藻井。公开版使用程序化材质和原生汉字匾额，保留照片作为考据来源；工程本身不包含原始照片和航拍文件。匾额的笔迹和满文暂未复原。
 
 ## 从源码重建基础场景

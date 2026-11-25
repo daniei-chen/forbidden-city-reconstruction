@@ -41,6 +41,11 @@ PIGMENTS = {
     '参考表面 · 御座围屏雕刻 · 官方305': ('太和殿 · 围屏鎏金起伏', (.22, .091, .018), (.58, .286, .063), .54, .53),
     '文渊阁 · 2025院刊实拍额枋彩画': ('文渊阁 · 额枋石绿', (.033, .085, .047), (.101, .179, .092), .70, .08),
 }
+PREVIEWS = {
+    '01': ('Forbidden_City_Overview', .625, .05),
+    '57': ('Qianqiu_Pavilion', .6875, .06),
+    '60': ('Wanchun_Caisson', .6875, .44),
+}
 
 
 def inventory():
@@ -196,7 +201,7 @@ def verify(path, original, replaced):
             'packed_source_images': 0, 'reopened_and_verified': True}
 
 
-def preview(target):
+def preview(target, views):
     scene = bpy.context.scene
     configure_cycles(scene)
     target.mkdir(parents=True, exist_ok=True)
@@ -208,9 +213,8 @@ def preview(target):
     scene.cycles.use_denoising = True
     if scene.cycles.device == 'GPU':
         scene.cycles.denoiser = 'OPTIX'
-    for index, name, aspect, exposure in (('01', 'Forbidden_City_Overview', .625, .05),
-                                           ('58', 'Wanchun_Pavilion', .6875, .09),
-                                           ('62', 'Wanchun_Roof_and_Inscription', .6875, .09)):
+    for index in views:
+        name, aspect, exposure = PREVIEWS[index]
         scene.camera = next(o for o in scene.objects if o.type == 'CAMERA' and o.name.startswith(index + ' '))
         scene.render.resolution_x = 1600
         scene.render.resolution_y = round(1600 * aspect)
@@ -224,8 +228,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('output', type=Path)
     parser.add_argument('--preview', action='store_true')
+    parser.add_argument('--preview-only', action='store_true', help='Render a previously packaged public file.')
+    parser.add_argument('--views', nargs='+', choices=tuple(PREVIEWS), default=tuple(PREVIEWS))
     args = parser.parse_args(sys.argv[sys.argv.index('--') + 1:])
     path = args.output.resolve()
+    if args.preview_only:
+        bpy.ops.wm.open_mainfile(filepath=str(path), load_ui=False)
+        preview(path.parent, args.views)
+        return
     if path == Path(bpy.data.filepath).resolve():
         parser.error('Output must be different from the source project.')
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -237,7 +247,7 @@ def main():
     path.with_suffix('.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print('PUBLIC_VERIFIED', path.name, len(report['scenes']), flush=True)
     if args.preview:
-        preview(path.parent)
+        preview(path.parent, args.views)
 
 
 if __name__ == '__main__':
