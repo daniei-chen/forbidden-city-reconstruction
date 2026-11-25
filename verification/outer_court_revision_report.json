@@ -1,0 +1,132 @@
+{
+  "source_blend": "The_Forbidden_City_Wenyuan_Architectural_Revision.blend",
+  "native_blend": "The_Forbidden_City_Outer_Court_Revision.blend",
+  "pairs": [
+    {
+      "building": "文华殿",
+      "rear_hall": "主敬殿",
+      "museum_source": "https://www.dpm.org.cn/explore/building/236531.html",
+      "osm_way": "43519304",
+      "gate_osm_way": "40478705",
+      "origin": [
+        184.3381899914826,
+        -277.32628769903863
+      ],
+      "yaw_rad": -0.007462890592580852,
+      "spring_garden_tree_nodes": [
+        "6103311516",
+        "6103311517",
+        "6103311518",
+        "6103311519",
+        "6144851910",
+        "6144851911"
+      ],
+      "plan_iou_against_contributed_map": 0.989012,
+      "roof_envelopes_local_m": {
+        "front": {
+          "x0": -17.93619845918906,
+          "y0": -24.429732417753524,
+          "x1": 18.126581366099316,
+          "y1": -2.7179215232060265
+        },
+        "rear": {
+          "x0": -17.823876366943733,
+          "y0": 7.1651788286363765,
+          "x1": 18.165143558362917,
+          "y1": 25.029190646459295
+        },
+        "link": {
+          "x0": -6.35384087362007,
+          "y0": -2.7179215232060265,
+          "x1": 6.450550693951579,
+          "y1": 7.1651788286363765
+        }
+      },
+      "model_elevations_m_estimated": {
+        "floor": 1.48,
+        "front_eave": 7.05,
+        "front_ridge": 12.469999999999999,
+        "rear_eave": 6.7,
+        "rear_ridge": 11.48
+      },
+      "photo_validation_limits": "Actual conservation elevations, exact ornament inventories, interior exhibition fittings and repair-era dimensions unavailable here.",
+      "collection": "文华殿与主敬殿 · 工字形殿群",
+      "superseded": [
+        "文华殿 · OSM 43519304",
+        "文华殿 · 三维瓦作 43519304"
+      ],
+      "mesh_objects": 35,
+      "polygons": 899577
+    },
+    {
+      "building": "武英殿",
+      "rear_hall": "敬思殿",
+      "museum_source": "https://www.dpm.org.cn/explore/building/236500.html",
+      "osm_way": "43512262",
+      "gate_osm_way": "40542454",
+      "origin": [
+        -221.54308457142287,
+        -276.79730445936997
+      ],
+      "yaw_rad": -0.006528711691270947,
+      "spring_garden_tree_nodes": [],
+      "plan_iou_against_contributed_map": 0.981229,
+      "roof_envelopes_local_m": {
+        "front": {
+          "x0": -17.953987353253645,
+          "y0": -25.546348267024502,
+          "x1": 18.6248400833139,
+          "y1": -0.641734690192523
+        },
+        "rear": {
+          "x0": -18.208160038175247,
+          "y0": 8.164472744142628,
+          "x1": 18.455173851298216,
+          "y1": 26.349854741342988
+        },
+        "link": {
+          "x0": -6.351076975877474,
+          "y0": -0.641734690192523,
+          "x1": 6.3909151548343885,
+          "y1": 8.164472744142628
+        }
+      },
+      "model_elevations_m_estimated": {
+        "floor": 1.6,
+        "front_eave": 7.32,
+        "front_ridge": 12.86,
+        "rear_eave": 6.85,
+        "rear_ridge": 11.75
+      },
+      "photo_validation_limits": "Actual conservation elevations, exact ornament inventories, interior exhibition fittings and repair-era dimensions unavailable here.",
+      "collection": "武英殿与敬思殿 · 工字形殿群",
+      "superseded": [
+        "武英殿 · OSM 43512262",
+        "武英殿 · 三维瓦作 43512262"
+      ],
+      "mesh_objects": 28,
+      "polygons": 698352
+    }
+  ],
+  "wenhua_walkthrough": {
+    "scene": "文华殿 · 海棠甬路至檐下",
+    "frames_checked": 240,
+    "fps": 24,
+    "shared_native_objects": 365,
+    "route_intersection_meshes": 15,
+    "eye_height_m": 1.65,
+    "floor_minimum_z_m": 0.022000052712180397,
+    "floor_maximum_z_m": 1.499500112100081,
+    "ray_clearance_m": 0.23,
+    "start_m": [
+      184.1189727783203,
+      -319.45556640625,
+      1.7309999465942383
+    ],
+    "end_m": [
+      183.73995971679688,
+      -300.56219482421875,
+      3.1495001316070557
+    ]
+  }
+}

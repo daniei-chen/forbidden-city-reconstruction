@@ -1,0 +1,111 @@
+{
+  "file": "The_Forbidden_City_Yude_Tang_Revision.blend",
+  "passed": true,
+  "tests": [
+    {
+      "check": "Metric scene",
+      "passed": true,
+      "evidence": 1.0
+    },
+    {
+      "check": "Superseded mapped roof meshes removed",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "Bath floor at modelled section level",
+      "passed": true,
+      "evidence": [
+        "浴德堂 · 按 0.64 m 模数分块铺砖",
+        1.0799998140529812
+      ]
+    },
+    {
+      "check": "Four clear bath walls approximately two metres from centre",
+      "passed": true,
+      "evidence": [
+        [
+          "浴德堂 · 白釉砖错缝、券砖与原门轴痕迹",
+          1.9953954209029263
+        ],
+        [
+          "浴德堂 · 白釉砖错缝、券砖与原门轴痕迹",
+          1.9952428932658601
+        ],
+        [
+          "浴德堂 · 白釉砖错缝、券砖与原门轴痕迹",
+          1.9925569912168861
+        ],
+        [
+          "浴德堂 · 白釉砖错缝、券砖与原门轴痕迹",
+          1.9931973293823346
+        ]
+      ]
+    },
+    {
+      "check": "Curve through both arches has no intersecting wall",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "Sunken stair is open through saved city paving",
+      "passed": true,
+      "evidence": {
+        "z": -0.5187499523162842,
+        "surface": "浴德堂 · 烧火间下沉入口及挡土石阶"
+      }
+    },
+    {
+      "check": "Firebox feed is empty across the masonry surround",
+      "passed": true,
+      "evidence": {
+        "opening": null,
+        "jamb": [
+          "浴德堂 · 下沉烧火间 · 东墙与贯通火口",
+          0.4200132096011535
+        ]
+      }
+    },
+    {
+      "check": "Oculus has depth before glass, with masonry at the side",
+      "passed": true,
+      "evidence": {
+        "centre": [
+          "浴德堂 · 0.60 米采光口、石口与玻璃顶盖",
+          1.713142402681374
+        ],
+        "side": [
+          "浴德堂 · 0.60 米采光口、石口与玻璃顶盖",
+          1.0851425993948554
+        ]
+      }
+    },
+    {
+      "check": "Saved walkthrough camera animation",
+      "passed": true,
+      "evidence": "doorway-v2"
+    },
+    {
+      "check": "Saved Yude bath walkthrough uses the validated path",
+      "passed": true,
+      "evidence": {
+        "scene": "浴德堂 · 穿过券道看穹顶",
+        "frames": 288,
+        "fps": 24,
+        "frames_directory": "yude_tang_walkthrough_frames",
+        "walk_distance_m": 11.245,
+        "eye_height_m": 1.63,
+        "clearance_radius_m": 0.155,
+        "floor_range_m": [
+          1.2200000286102295,
+          1.2259999513626099
+        ],
+        "floor_and_clearance_checks": 288,
+        "checked_meshes": 27,
+        "shared_objects": 130,
+        "scope": "Sampled floor, torso and head clearance within the saved model. Not a human gait simulation."
+      }
+    }
+  ],
+  "scope": "Scene geometry and apertures. Field scan accuracy and current condition are not asserted."
+}

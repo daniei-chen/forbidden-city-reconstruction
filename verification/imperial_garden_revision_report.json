@@ -1,0 +1,171 @@
+{
+  "source_blend": "The_Forbidden_City_Yude_Tang_Revision.blend",
+  "native_blend": "The_Forbidden_City_Imperial_Garden_Revision.blend",
+  "collection": "御花园 · 浮碧亭与澄瑞亭",
+  "pavilions": [
+    {
+      "name": "浮碧亭",
+      "collection": "浮碧亭 · 石桥、木作与藻井",
+      "museum": "https://www.dpm.org.cn/explore/building/236498.html",
+      "photographs": [
+        "https://img.dpm.org.cn/Uploads/Picture/2020/04/17/s5e998d952596d.jpg",
+        "https://img.dpm.org.cn/Uploads/Picture/dc/1944[1024].jpg",
+        "https://img.dpm.org.cn/Uploads/Picture/dc/8020.jpg"
+      ],
+      "caisson_reference": "https://www.dpm.org.cn/explore/building/236498.html",
+      "documented_approx_width_m": 8.0,
+      "documented_main_bays": 3,
+      "documented_arch_count": 1,
+      "osm_building_way": "40795241",
+      "osm_pond_way": "42353096",
+      "mapped_origin_m": [
+        52.17069819629612,
+        407.843238119803,
+        0.0
+      ],
+      "mapped_yaw_rad": 0.004371162314686927,
+      "mapped_pond_rect_m": [
+        23.862661720949085,
+        9.708350070242584
+      ],
+      "mapped_pond_area_m2": 231.61105842818282,
+      "modelled_deck_z_m": 0.79,
+      "modelled_water_z_m": -0.68,
+      "modelled_caisson_edge_z_m": 4.73,
+      "removed_proxy_objects": [
+        "浮碧亭 · OSM 40795241",
+        "浮碧亭 · 三维瓦作 40795241 · 主体瓦面",
+        "浮碧亭 · 三维瓦作 40795241 · 文献剪边"
+      ],
+      "trimmed_generic_pool_faces": 30,
+      "mesh_objects": 36,
+      "native_polygons": 883365
+    },
+    {
+      "name": "澄瑞亭",
+      "collection": "澄瑞亭 · 石桥、木作与藻井",
+      "museum": "https://www.dpm.org.cn/explore/building/236443.html",
+      "photographs": [
+        "https://img.dpm.org.cn/Uploads/Picture/2020/04/16/s5e98108dd6faa.jpg",
+        "https://img.dpm.org.cn/Uploads/Picture/2020/04/16/s5e98108dd0c88.jpg",
+        "https://img.dpm.org.cn/Uploads/Picture/2020/04/16/s5e98108dce16c.jpg"
+      ],
+      "caisson_reference": "https://img.dpm.org.cn/Uploads/Picture/dc/7906.jpg",
+      "documented_approx_width_m": 8.0,
+      "documented_main_bays": 3,
+      "documented_arch_count": 1,
+      "osm_building_way": "40795243",
+      "osm_pond_way": "42353097",
+      "mapped_origin_m": [
+        -54.63656505042187,
+        407.51191520626963,
+        0.0
+      ],
+      "mapped_yaw_rad": -0.011209850744829275,
+      "mapped_pond_rect_m": [
+        24.241162962713375,
+        9.712221066569512
+      ],
+      "mapped_pond_area_m2": 223.58085596708335,
+      "modelled_deck_z_m": 0.79,
+      "modelled_water_z_m": -0.68,
+      "modelled_caisson_edge_z_m": 4.73,
+      "removed_proxy_objects": [
+        "澄瑞亭 · OSM 40795243",
+        "澄瑞亭 · 三维瓦作 40795243 · 主体瓦面",
+        "澄瑞亭 · 三维瓦作 40795243 · 文献剪边"
+      ],
+      "trimmed_generic_pool_faces": 44,
+      "mesh_objects": 35,
+      "native_polygons": 900753
+    }
+  ],
+  "whole_city_every_detail_1to1_proven": false,
+  "study_limits": [
+    "Museum records specify about 8 m across the column grid, shape and subjects.",
+    "Pond plan and pavilion position come from mapped outlines.",
+    "Bridge elevation, timber sizes, tile curves and ornament are reconstructed from reference views.",
+    "Plant placement and lighting are interpretations of garden conditions."
+  ],
+  "context": {
+    "halls": [
+      {
+        "name": "摛藻堂",
+        "collection": "摛藻堂 · 原址五开间与硬山屋顶",
+        "source": "https://www.dpm.org.cn/explore/building/236432.html",
+        "osm_id": "40795239",
+        "mapped_roof_plan_m": [
+          18.068323924708178,
+          6.285512664812356
+        ],
+        "documented_bays": 5,
+        "has_documented_veranda": true,
+        "inferred_eave_z_m": 4.36,
+        "removed_proxy_objects": [
+          "擒藻堂 · OSM 40795239",
+          "擒藻堂 · 三维瓦作 40795239"
+        ]
+      },
+      {
+        "name": "位育斋",
+        "collection": "位育斋 · 原址五开间与硬山屋顶",
+        "source": "https://www.dpm.org.cn/explore/building/236445.html",
+        "osm_id": "40795237",
+        "mapped_roof_plan_m": [
+          17.582955677566265,
+          8.786833753521293
+        ],
+        "documented_bays": 5,
+        "has_documented_veranda": false,
+        "inferred_eave_z_m": 4.36,
+        "removed_proxy_objects": [
+          "位育斋 · OSM 40795237",
+          "位育斋 · 三维瓦作 40795237"
+        ]
+      }
+    ],
+    "garden_trees_m": [
+      [
+        61.89257876822108,
+        395.9956207160704,
+        0.0
+      ],
+      [
+        42.38078811515782,
+        398.6503571457434,
+        0.0
+      ],
+      [
+        -45.100454947725844,
+        395.5142652651662,
+        0.0
+      ],
+      [
+        -64.56851542044018,
+        398.4726806232149,
+        0.0
+      ]
+    ],
+    "landscape_fidelity": "Vegetation specimen positions and masonry surface layout inferred from photos; no inventory measurements."
+  },
+  "chengrui_walkthrough": {
+    "scene": "澄瑞亭 · 过桥仰看双龙藻井",
+    "frames": 216,
+    "fps": 24,
+    "frames_directory": "chengrui_bridge_walkthrough_frames",
+    "walk_distance_m": 15.522,
+    "eye_height_m": 1.64,
+    "sampled_head_body_clearance_m": 0.2,
+    "floor_range_m": [
+      0.02199995517730713,
+      0.7914999723434448
+    ],
+    "checked_frames": 216,
+    "eye_height_smoothing_deviation_m": [
+      -0.08439,
+      0.08815
+    ],
+    "shared_render_objects": 186,
+    "scope": "Ray checks over the modelled paving, not a physical site survey."
+  }
+}

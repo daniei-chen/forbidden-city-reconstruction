@@ -1,0 +1,105 @@
+{
+  "source_blend": "The_Forbidden_City_Outer_Court_Revision.blend",
+  "native_blend": "The_Forbidden_City_Yude_Tang_Revision.blend",
+  "yude_tang": {
+    "collection": "浴德堂 · 文献尺度与实景分构件",
+    "world_origin_m": [
+      -247.80461120464687,
+      -267.69155637393175,
+      0.0
+    ],
+    "world_yaw_rad": -0.024183716905434416,
+    "sources": {
+      "museum": "https://www.dpm.org.cn/explore/building/236482.html",
+      "measured_plan_section": "https://www.dpm.org.cn/Uploads/File/2021/11/08/u6188edf18abbd.pdf",
+      "fabric_and_equipment": "https://www.dpm.org.cn/Uploads/File/2019/07/17/u5d2e998b92f38.pdf",
+      "passage_measurements": "https://www.dpm.org.cn/Uploads/File/pdf/9c/76/2e/9c762e9760e2e9ec23a6da55fb668a45.pdf",
+      "interior_photo": "https://img.dpm.org.cn/Uploads/Picture/dc/7415.jpg"
+    },
+    "documented_dimensions_m": {
+      "bath_side_approximate": 4.0,
+      "oculus_diameter": 0.6,
+      "floor_tile_module": 0.64,
+      "first_arch_width": 1.26,
+      "bent_corridor_approximate_length": 5.2,
+      "boiler_internal_diameter": 1.0,
+      "boiler_internal_depth": 0.92,
+      "well_platform_height": 2.0,
+      "fire_room_width": 1.5,
+      "fire_room_depth_approximate": 3.5,
+      "fire_room_drop": 0.7,
+      "fire_chamber_diameter": 1.2,
+      "fire_chamber_height": 1.45
+    },
+    "adopted_model_values": {
+      "wall_thickness_m": 1.105,
+      "schematic_corridor_centreline_m": 5.205,
+      "bath_floor_z_m": 1.22,
+      "masonry_crown_z_m": 5.520142488491889,
+      "well_location_m": [
+        -260.97571184931127,
+        -256.0966187562669,
+        0.0
+      ]
+    },
+    "fidelity_limits": [
+      "Published plan/section are archival, and repair details vary by date.",
+      "Mapped placement of front hall and well. Exact joints, paint, weathering and current object positions require a site scan.",
+      "Hidden duct shape and positions reconstructed from the description and drawing ratios."
+    ],
+    "removed_superseded_objects": [
+      "浴德堂 · OSM 40542457",
+      "井亭 · OSM 40542542",
+      "浴德堂 · 三维瓦作 40542457",
+      "井亭 · 三维瓦作 40542542"
+    ],
+    "paving_faces_trimmed": {
+      "场地与城内铺地 · 地面按水域开口": 1,
+      "石板路 · mapped circulation": 0
+    },
+    "meshes": 48,
+    "native_polygons": 177013,
+    "render_lighting": "Adjustable inspection fill in scenes. Not fixtures in the surveyed building."
+  },
+  "wenhua_walkthrough": {
+    "scene": "文华殿 · 海棠甬路至檐下",
+    "frames_checked": 240,
+    "fps": 24,
+    "shared_native_objects": 365,
+    "route_intersection_meshes": 14,
+    "eye_height_m": 1.65,
+    "floor_minimum_z_m": 0.022000031037764115,
+    "floor_maximum_z_m": 1.4995000470768323,
+    "ray_clearance_m": 0.23,
+    "start_m": [
+      184.1189727783203,
+      -319.45556640625,
+      1.7309999465942383
+    ],
+    "end_m": [
+      183.3301544189453,
+      -302.5692138671875,
+      3.1477272510528564
+    ],
+    "frames_directory": "wenhua_approach_frames_doorway-v2",
+    "camera_path_revision": "doorway-v2",
+    "lighting": "Walkthrough-only fill, linked to nearby masonry and wood. Roof glaze uses scene daylight."
+  },
+  "yude_walkthrough": {
+    "scene": "浴德堂 · 穿过券道看穹顶",
+    "frames": 288,
+    "fps": 24,
+    "frames_directory": "yude_tang_walkthrough_frames",
+    "walk_distance_m": 11.245,
+    "eye_height_m": 1.63,
+    "clearance_radius_m": 0.155,
+    "floor_range_m": [
+      1.2200000286102295,
+      1.2259999513626099
+    ],
+    "floor_and_clearance_checks": 288,
+    "checked_meshes": 27,
+    "shared_objects": 130,
+    "scope": "Sampled floor, torso and head clearance within the saved model. Not a human gait simulation."
+  }
+}

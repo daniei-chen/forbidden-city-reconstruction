@@ -1,0 +1,256 @@
+{
+  "file": "The_Forbidden_City_North_Garden_Revision.blend",
+  "passed": true,
+  "tests": [
+    {
+      "check": "Metric units",
+      "passed": true,
+      "evidence": 1.0
+    },
+    {
+      "check": "Old target proxy shells and tile carriers removed",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "Earlier three native tours preserved",
+      "passed": true,
+      "evidence": 5
+    },
+    {
+      "check": "Qinan five and three axes use surveyed column bases",
+      "passed": true,
+      "evidence": {
+        "x_bays_m": [
+          4.03,
+          4.15,
+          4.71,
+          4.15,
+          4.03
+        ],
+        "y_bays_m": [
+          1.65,
+          7.34,
+          1.65
+        ]
+      }
+    },
+    {
+      "check": "Sixteen eave posts and four retained inner posts at measured heights",
+      "passed": true,
+      "evidence": {
+        "eave_posts": 16,
+        "gold_posts": 4,
+        "eave_height_m": 4.29,
+        "gold_height_m": 7.485
+      }
+    },
+    {
+      "check": "No inner posts at the four omitted central junctions",
+      "passed": true,
+      "evidence": [
+        [
+          -6.505,
+          -3.6700000000000004,
+          1.732
+        ],
+        [
+          6.504999999999999,
+          -3.6700000000000004,
+          1.732
+        ],
+        [
+          -6.505,
+          3.67,
+          1.732
+        ],
+        [
+          6.504999999999999,
+          3.67,
+          1.732
+        ]
+      ]
+    },
+    {
+      "check": "Two original-type huataifang sections use 920 x 540 mm",
+      "passed": true,
+      "evidence": [
+        [
+          0.92,
+          0.54
+        ],
+        [
+          0.92,
+          0.54
+        ]
+      ]
+    },
+    {
+      "check": "Flat roof boards are at measured lower and upper faces",
+      "passed": true,
+      "evidence": [
+        [
+          10.346,
+          10.596
+        ]
+      ]
+    },
+    {
+      "check": "Qinan main ceiling stays at the surveyed plane and opens into the caisson",
+      "passed": true,
+      "evidence": {
+        "main_plane": [
+          "钦安殿 · 井口板、天花下皮与八方井壁",
+          10.003
+        ],
+        "recess": [
+          "钦安殿 · 井口板、天花下皮与八方井壁",
+          10.797
+        ]
+      }
+    },
+    {
+      "check": "The central shrine and ten catalogue side shrines are individually editable",
+      "passed": true,
+      "evidence": [
+        "北墙正龛 · 漆架、罩帘和分层底座",
+        "西大龛 · 漆架、罩帘和分层底座",
+        "西重檐龛 · 漆架、罩帘和分层底座",
+        "西秋令龛 · 漆架、罩帘和分层底座",
+        "西描金漆龛 · 漆架、罩帘和分层底座",
+        "西冬令龛 · 漆架、罩帘和分层底座",
+        "东大龛 · 漆架、罩帘和分层底座",
+        "东重檐龛 · 漆架、罩帘和分层底座",
+        "东夏令龛 · 漆架、罩帘和分层底座",
+        "东描金漆龛 · 漆架、罩帘和分层底座",
+        "东春令龛 · 漆架、罩帘和分层底座"
+      ]
+    },
+    {
+      "check": "Qinan camera has an unblocked sightline up to the shrine and a closed roof perimeter",
+      "passed": true,
+      "evidence": {
+        "sightline": null,
+        "walls": [
+          [
+            "钦安殿 · 护檐封护、重檐转接木与天花边板",
+            6.8019
+          ],
+          [
+            "钦安殿 · 护檐封护、重檐转接木与天花边板",
+            6.68106
+          ],
+          [
+            "钦安殿 · 护檐封护、重檐转接木与天花边板",
+            7.07626
+          ],
+          [
+            "钦安殿 · 护檐封护、重檐转接木与天花边板",
+            7.07626
+          ]
+        ]
+      }
+    },
+    {
+      "check": "Tianyi gate is a real through arch with open doors",
+      "passed": true,
+      "evidence": {
+        "through": null,
+        "jamb": [
+          "天一门 · 通券、青石券脸及两面台阶",
+          1.72
+        ],
+        "intrados": [
+          "天一门 · 通券、青石券脸及两面台阶",
+          3.39
+        ]
+      }
+    },
+    {
+      "check": "The two individually hinged doors each have nine by nine modeled studs",
+      "passed": true,
+      "evidence": [
+        81,
+        81
+      ]
+    },
+    {
+      "check": "Rockery entry is void and leaves a brick chamber below carved ceiling",
+      "passed": true,
+      "evidence": {
+        "through": null,
+        "supported_floor": [
+          "堆秀山 · 洞内脚下铺砖与门坎",
+          0.153
+        ],
+        "vault": [
+          "堆秀山 · 实体蟠龙石雕和圆井",
+          3.057
+        ]
+      }
+    },
+    {
+      "check": "west rock stair treads rise to summit",
+      "passed": true,
+      "evidence": {
+        "tread_samples": 53,
+        "failures": []
+      }
+    },
+    {
+      "check": "east rock stair treads rise to summit",
+      "passed": true,
+      "evidence": {
+        "tread_samples": 54,
+        "failures": []
+      }
+    },
+    {
+      "check": "Summit paving is close to the museum’s approximate 10 m",
+      "passed": true,
+      "evidence": [
+        [
+          "御景亭 · 山顶白石台盘和外圈墁地",
+          9.95
+        ],
+        [
+          "御景亭 · 山顶白石台盘和外圈墁地",
+          9.95
+        ],
+        [
+          "御景亭 · 山顶白石台盘和外圈墁地",
+          9.95
+        ]
+      ]
+    },
+    {
+      "check": "Four freestanding summit pavilion columns and native yellow-border green tiles",
+      "passed": true,
+      "evidence": 19
+    },
+    {
+      "check": "Summit pavilion has a physical east opening and an inset ceiling over the throne",
+      "passed": true,
+      "evidence": {
+        "east_opening": null,
+        "ceiling_crown": [
+          "御景亭 · 方格天花和四级八方井壁",
+          13.851
+        ],
+        "surrounding_ceiling": [
+          "御景亭 · 方格天花和四级八方井壁",
+          13.406
+        ]
+      }
+    },
+    {
+      "check": "Native ascent timeline and validated frame count are present after reopen",
+      "passed": true,
+      "evidence": {
+        "frame_end": 480,
+        "fps": 24
+      }
+    }
+  ],
+  "scope": "Saved geometry, documentary dimensions and physical openings. Not a field scan comparison."
+}

@@ -1,0 +1,18 @@
+{
+  "video": "Dui_Xiu_Ascent_to_Yujing_20s.mp4",
+  "bytes": 16135772,
+  "stream": {
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 720,
+    "r_frame_rate": "24/1",
+    "duration": "20.000000",
+    "nb_read_frames": "480"
+  },
+  "source_frames": "duixiu_ascent_frames_v3",
+  "frame_mean_luma_min_max": [
+    35,
+    157
+  ],
+  "full_decode_verified": true
+}

@@ -1,0 +1,370 @@
+{
+  "native_blend": "The_Forbidden_City_North_Garden_Revision.blend",
+  "base_blend": "The_Forbidden_City_Imperial_Garden_Revision.blend",
+  "collection": "御花园 · 钦安殿、天一门与堆秀山",
+  "qinan": {
+    "sources": {
+      "building": "https://www.dpm.org.cn/explore/building/236494.html",
+      "timber_survey": "https://www.dpm.org.cn/Uploads/File/2018/06/04/u5b1521c1583e4.pdf",
+      "furnishing_catalogue": "https://www.dpm.org.cn/Uploads/File/2020/02/18/u5e4bb67fc7439.pdf"
+    },
+    "adopted_state": "Main hall with the porch rebuilt during the 2004–2008 conservation work, §1 in the 2015 timber study.",
+    "column_base_grid_2004_m": {
+      "width_bays": [
+        4.03,
+        4.15,
+        4.71,
+        4.15,
+        4.03
+      ],
+      "depth_bays": [
+        1.65,
+        7.34,
+        1.65
+      ]
+    },
+    "column_head_grid_2013_m": {
+      "upper_width_bays": [
+        2.382,
+        4.114,
+        4.625,
+        4.1145,
+        2.397
+      ],
+      "upper_depth": 7.1905,
+      "lower_central_span": 4.6755,
+      "lower_middle_depth": 7.255
+    },
+    "column_head_grid_mixed_records_m": {
+      "lower_x": [
+        4.085,
+        4.116,
+        4.6755,
+        4.122,
+        4.085
+      ],
+      "lower_y": [
+        1.68,
+        7.255,
+        1.68
+      ],
+      "note": "Lower outer flank and gallery spans use the earlier survey, the accessible main spans use 2013 results."
+    },
+    "from_stone_column_base_top_m": {
+      "eave_post_clear": 4.29,
+      "gold_post_clear": 7.485,
+      "lower_eave_purlin": [
+        5.18,
+        5.46
+      ],
+      "upper_eave_purlin": [
+        8.555,
+        8.834
+      ],
+      "ceiling_underside": 8.271,
+      "flat_roof_board": [
+        10.346,
+        10.596
+      ]
+    },
+    "flower_beam_section_height_width_m": [
+      0.92,
+      0.54
+    ],
+    "bracket_measured_mean_projections_m": [
+      0.2145,
+      0.2251
+    ],
+    "bracket_measured_mean_step_heights_m": [
+      0.1596,
+      0.16,
+      0.1594
+    ],
+    "derived_or_inferred": {
+      "site_floor_z_m": 1.56,
+      "column_base_top_z_m": 1.732,
+      "flat_roof_plan_m_from_section_ratios": [
+        12.15,
+        3.66
+      ],
+      "note": "Column diameters, surface wear, upper roof ornaments, front porch timber, decorations and current object states have photo or typology estimates."
+    },
+    "column_counts": {
+      "eave_posts": 16,
+      "retained_gold_posts": 4,
+      "omitted_gold_posts": 4
+    },
+    "collection": "钦安殿 · 实测大木与御花园中轴",
+    "interior_furnishings": {
+      "collection": "钦安殿 · 档案陈设与礼神空间",
+      "catalogue": "https://www.dpm.org.cn/Uploads/File/2020/02/18/u5e4bb67fc7439.pdf",
+      "shrine_assemblies": 11,
+      "modelled_sequence": [
+        "北墙正龛 · 漆架、罩帘和分层底座",
+        "西大龛 · 漆架、罩帘和分层底座",
+        "西重檐龛 · 漆架、罩帘和分层底座",
+        "西秋令龛 · 漆架、罩帘和分层底座",
+        "西描金漆龛 · 漆架、罩帘和分层底座",
+        "西冬令龛 · 漆架、罩帘和分层底座",
+        "东大龛 · 漆架、罩帘和分层底座",
+        "东重檐龛 · 漆架、罩帘和分层底座",
+        "东夏令龛 · 漆架、罩帘和分层底座",
+        "东描金漆龛 · 漆架、罩帘和分层底座",
+        "东春令龛 · 漆架、罩帘和分层底座"
+      ],
+      "confidence": "Appendix I object/type sequence, not an object-by-object scan or a dated inventory reconstruction."
+    }
+  },
+  "tianyi": {
+    "collection": "天一门 · 青砖券门和琉璃影壁",
+    "source": "https://www.dpm.org.cn/explore/building/236541.html",
+    "source_osm": "685600291",
+    "modelled_masonry_clear_m": [
+      2.18,
+      2.92
+    ],
+    "documented_features": [
+      "single brick arch",
+      "paired studded leaves",
+      "nine-by-nine nail rows",
+      "glazed crane and cloud side screens",
+      "two gilded xiezhi and one bronze censer"
+    ],
+    "door_pose": "Master is open for inspection. South portrait closes the same modeled leaves on their hinges."
+  },
+  "duixiu": {
+    "collection": "堆秀山与御景亭 · 叠石、双磴道及山顶亭",
+    "sources": {
+      "rockery": "https://www.dpm.org.cn/explore/building/236429.html",
+      "pavilion": "https://www.dpm.org.cn/explore/building/236490.html",
+      "rockery_archival_article": "https://img.dpm.org.cn/Uploads/pdf/1603/T00091_00.pdf",
+      "garden_situation_plan": "https://www.dpm.org.cn/Uploads/File/2024/07/22/u669dd30a7f61c.pdf"
+    },
+    "mapped_osm_rockery": "42424158",
+    "mapped_osm_pavilion": "42424174",
+    "documented_summit_height_approx_m": 10.0,
+    "model_summit_platform_z_m": 9.95,
+    "individual_limestone_objects": 383,
+    "reusable_closed_rock_forms": 11,
+    "west_flights": [
+      {
+        "treads": 11,
+        "riser_m": 0.17354545454545456,
+        "tread_m": 0.34454979385681944,
+        "start_landing_m": 0.0,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 12,
+        "riser_m": 0.1691666666666667,
+        "tread_m": 0.26288058167397554,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 10,
+        "riser_m": 0.17099999999999996,
+        "tread_m": 0.26605490893787365,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 5,
+        "riser_m": 0.1780000000000001,
+        "tread_m": 0.21283870463804272,
+        "start_landing_m": 0.39490108090507925,
+        "end_landing_m": 0.39490108090507925
+      },
+      {
+        "treads": 5,
+        "riser_m": 0.22599999999999998,
+        "tread_m": 0.229486841883009,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 6,
+        "riser_m": 0.19333333333333322,
+        "tread_m": 0.22243266341796444,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 4,
+        "riser_m": 0.27249999999999996,
+        "tread_m": 0.242449972481438,
+        "start_landing_m": 0.2624744301832086,
+        "end_landing_m": 0.0
+      }
+    ],
+    "east_flights": [
+      {
+        "treads": 10,
+        "riser_m": 0.1759,
+        "tread_m": 0.30889683288903613,
+        "start_landing_m": 0.0,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 12,
+        "riser_m": 0.16749999999999998,
+        "tread_m": 0.2660682127794173,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 11,
+        "riser_m": 0.16454545454545458,
+        "tread_m": 0.24672732446835619,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 7,
+        "riser_m": 0.16142857142857142,
+        "tread_m": 0.21404028100505382,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 3,
+        "riser_m": 0.25,
+        "tread_m": 0.2404489889999771,
+        "start_landing_m": 0.26767753305049713,
+        "end_landing_m": 0.26767753305049713
+      },
+      {
+        "treads": 6,
+        "riser_m": 0.19833333333333325,
+        "tread_m": 0.2214161870641187,
+        "start_landing_m": 0.4,
+        "end_landing_m": 0.4
+      },
+      {
+        "treads": 5,
+        "riser_m": 0.2539999999999999,
+        "tread_m": 0.24271263734713117,
+        "start_landing_m": 0.32844848637191193,
+        "end_landing_m": 0.0
+      }
+    ],
+    "grotto": "堆秀山 · 南券、砖砌穹隆与石雕蟠龙藻井",
+    "summit_pavilion": "御景亭 · 山顶石台、四柱槅扇和攒尖顶",
+    "form_confidence": "Mapped outline and recorded features; individual stones, cave section and paths are interpreted from references."
+  },
+  "removed_generic_proxy_objects": {
+    "42424174": [
+      "御景亭 · OSM 42424174",
+      "御景亭 · 三维瓦作 42424174"
+    ],
+    "685600247": [
+      "构件 · OSM 685600247",
+      "宫院屋面 · 三维瓦作 685600247"
+    ],
+    "685600255": [
+      "院落建筑 · OSM 685600255"
+    ],
+    "685600256": [
+      "院落建筑 · OSM 685600256"
+    ],
+    "685600257": [
+      "院落建筑 · OSM 685600257"
+    ],
+    "685600258": [
+      "院落建筑 · OSM 685600258"
+    ],
+    "685600259": [
+      "院落建筑 · OSM 685600259"
+    ],
+    "685600260": [
+      "院落建筑 · OSM 685600260"
+    ],
+    "685600273": [
+      "构件 · OSM 685600273"
+    ],
+    "685600274": [
+      "构件 · OSM 685600274"
+    ],
+    "685600275": [
+      "构件 · OSM 685600275"
+    ],
+    "685600276": [
+      "构件 · OSM 685600276"
+    ],
+    "685600277": [
+      "构件 · OSM 685600277",
+      "宫院屋面 · 三维瓦作 685600277"
+    ],
+    "685600278": [
+      "构件 · OSM 685600278",
+      "宫院屋面 · 三维瓦作 685600278"
+    ],
+    "685600279": [
+      "构件 · OSM 685600279",
+      "宫院屋面 · 三维瓦作 685600279"
+    ],
+    "685600280": [
+      "构件 · OSM 685600280",
+      "宫院屋面 · 三维瓦作 685600280"
+    ],
+    "685600281": [
+      "构件 · OSM 685600281"
+    ],
+    "685600282": [
+      "构件 · OSM 685600282",
+      "宫院屋面 · 三维瓦作 685600282"
+    ],
+    "685600283": [
+      "构件 · OSM 685600283",
+      "宫院屋面 · 三维瓦作 685600283"
+    ],
+    "685600284": [
+      "构件 · OSM 685600284",
+      "宫院屋面 · 三维瓦作 685600284"
+    ],
+    "685600285": [
+      "构件 · OSM 685600285",
+      "宫院屋面 · 三维瓦作 685600285"
+    ],
+    "685600286": [
+      "构件 · OSM 685600286"
+    ],
+    "685600287": [
+      "构件 · OSM 685600287"
+    ],
+    "685600288": [
+      "构件 · OSM 685600288"
+    ],
+    "685600291": [
+      "天一门 · OSM 685600291",
+      "天一门 · 三维瓦作 685600291"
+    ]
+  },
+  "new_mesh_objects": 554,
+  "new_mesh_datablocks": 182,
+  "fidelity_limit": "Actual metres with individually classified evidence. Unpublished surfaces are interpreted; full-city pixel matching remains unverified.",
+  "duixiu_walkthrough": {
+    "walk_length_m": 28.406,
+    "frames_checked": 480,
+    "fps": 24,
+    "eye_height_nominal_m": 1.64,
+    "minimum_checked_head_torso_radius_m": 0.177,
+    "head_dip_beneath_entry_lintel_max_m": 0.165,
+    "supported_floor_range_m": [
+      -5.960464477539063e-08,
+      10.22599983215332
+    ],
+    "floor_smoothing_error_m": [
+      -0.11150239613842672,
+      0.10655194749736374
+    ],
+    "mesh_objects_raycast": 229,
+    "terminal_support": "御景亭 · 独立小台基",
+    "final_subject": "South-facing throne and inset ceiling inside Yujing Pavilion",
+    "scope": "Per-frame vertical tread and head/torso sample from editable meshes. Path alignment and tread dimensions inferred.",
+    "scene": "堆秀山 · 东磴道登御景亭",
+    "frames": 480,
+    "frames_directory": "duixiu_ascent_frames_v3",
+    "shared_objects": 750
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "file": "The_Forbidden_City_Imperial_Garden_Twins.blend",
+  "passed": true,
+  "tests": [
+    {
+      "check": "metric scale",
+      "passed": true,
+      "evidence": 1.0
+    },
+    {
+      "check": "checked Dui Xiu native tour remains available",
+      "passed": true,
+      "evidence": [
+        "堆秀山 · 东磴道登御景亭",
+        "文华殿 · 海棠甬路至檐下",
+        "浴德堂 · 穿过券道看穹顶",
+        "澄瑞亭 · 过桥仰看双龙藻井",
+        "紫禁城 · metric architectural reconstruction"
+      ]
+    },
+    {
+      "check": "superseded map proxy objects are absent",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "万春亭 four independently rising staircases",
+      "passed": true,
+      "evidence": [
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ],
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ],
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ],
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ]
+      ]
+    },
+    {
+      "check": "万春亭 genuine passage through both doors in each annex",
+      "passed": true,
+      "evidence": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "check": "万春亭 12 outer and four separate inner posts",
+      "passed": true,
+      "evidence": [
+        12,
+        4
+      ]
+    },
+    {
+      "check": "万春亭 lower annex edge and circular, individually tiled upper roof",
+      "passed": true,
+      "evidence": {
+        "radius_m": 3.802452045524772,
+        "mapped_radius_m": 3.8024519297413124,
+        "lower_projecting_hips": 12,
+        "cap_tile_courses": 115
+      }
+    },
+    {
+      "check": "万春亭 recessed caisson exists above the main ceiling plane",
+      "passed": true,
+      "evidence": [
+        7.060000419616699,
+        6.269999980926514
+      ]
+    },
+    {
+      "check": "千秋亭 four independently rising staircases",
+      "passed": true,
+      "evidence": [
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ],
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ],
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ],
+        [
+          0.2037,
+          0.3814,
+          0.5591,
+          0.7369,
+          0.9146,
+          1.0923,
+          1.27
+        ]
+      ]
+    },
+    {
+      "check": "千秋亭 genuine passage through both doors in each annex",
+      "passed": true,
+      "evidence": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "check": "千秋亭 12 outer and four separate inner posts",
+      "passed": true,
+      "evidence": [
+        12,
+        4
+      ]
+    },
+    {
+      "check": "千秋亭 lower annex edge and circular, individually tiled upper roof",
+      "passed": true,
+      "evidence": {
+        "radius_m": 3.80263837825877,
+        "mapped_radius_m": 3.802638237424155,
+        "lower_projecting_hips": 12,
+        "cap_tile_courses": 115
+      }
+    },
+    {
+      "check": "千秋亭 recessed caisson exists above the main ceiling plane",
+      "passed": true,
+      "evidence": [
+        7.060000419616699,
+        6.269999980926514
+      ]
+    }
+  ],
+  "scope": "Reopened scene and physical geometry; no field height or pixel-level proof."
+}

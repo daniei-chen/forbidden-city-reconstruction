@@ -93,7 +93,7 @@ def north_hall(site,study,target,p):
             'documented_bays':5,'has_documented_veranda':veranda,'inferred_eave_z_m':eave}
 
 
-def old_cypress(target,plan,p,label,x,y,h,seed):
+def old_cypress(target,plan,p,label,x,y,h,seed,*,branch_start=1):
     rng=random.Random(seed)
     group=collection(label,target)
     b,needles=plan.batch(),plan.batch()
@@ -142,7 +142,7 @@ def old_cypress(target,plan,p,label,x,y,h,seed):
                 crown=(q+tip)*.5+Vector((0,0,.033))
                 needles.add([q,tip-width,tip+width,crown],[(0,1,3),(0,3,2),(1,2,3)],
                             colors[rng.randrange(len(colors))],smooth=True)
-    for i in range(1,10):
+    for i in range(branch_start,10):
         angle=i*2.399+rng.uniform(-.39,.39)
         d=Vector((math.cos(angle),math.sin(angle),rng.uniform(.22,.58)))
         branch(trunk[i],d,h*(.528-.032*i)*rng.uniform(.75,1.10),h*(.020-.0016*i),3)

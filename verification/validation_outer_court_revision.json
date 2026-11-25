@@ -1,0 +1,136 @@
+{
+  "file": "The_Forbidden_City_Outer_Court_Revision.blend",
+  "checks": [
+    {
+      "check": "Scene scale in metres",
+      "passed": true,
+      "evidence": 1.0
+    },
+    {
+      "check": "Referenced image assets packed",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "Wenhua camera animation available in saved file",
+      "passed": true,
+      "evidence": {
+        "scene": "文华殿 · 海棠甬路至檐下",
+        "frames_checked": 240,
+        "fps": 24,
+        "shared_native_objects": 365,
+        "route_intersection_meshes": 15,
+        "eye_height_m": 1.65,
+        "floor_minimum_z_m": 0.022000052712180397,
+        "floor_maximum_z_m": 1.499500112100081,
+        "ray_clearance_m": 0.23,
+        "start_m": [
+          184.1189727783203,
+          -319.45556640625,
+          1.7309999465942383
+        ],
+        "end_m": [
+          183.73995971679688,
+          -300.56219482421875,
+          3.1495001316070557
+        ]
+      }
+    },
+    {
+      "check": "文华殿 separated roof types",
+      "passed": true,
+      "evidence": [
+        "gable",
+        "xieshan",
+        "xieshan"
+      ]
+    },
+    {
+      "check": "文华殿 superseded envelopes absent",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "文华殿 fit to mapped plan",
+      "passed": true,
+      "evidence": 0.9890116146413085
+    },
+    {
+      "check": "文华殿 walkable line from terrace through both halls",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "文华殿 expected ridge over mapped centre",
+      "passed": true,
+      "evidence": {
+        "saved_z_m": 13.01084041595459,
+        "specified_shell_z_m": 12.469999999999999,
+        "mesh": "黄琉璃瓦单檐歇山 · sculpted ridge, chiwen terminals an"
+      }
+    },
+    {
+      "check": "主敬殿 expected ridge over mapped centre",
+      "passed": true,
+      "evidence": {
+        "saved_z_m": 12.02083969116211,
+        "specified_shell_z_m": 11.48,
+        "mesh": "黄琉璃瓦单檐歇山 · sculpted ridge, chiwen terminals a"
+      }
+    },
+    {
+      "check": "文华殿 mesh payload survived reload",
+      "passed": true,
+      "evidence": 899577
+    },
+    {
+      "check": "武英殿 separated roof types",
+      "passed": true,
+      "evidence": [
+        "gable",
+        "xieshan",
+        "xieshan"
+      ]
+    },
+    {
+      "check": "武英殿 superseded envelopes absent",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "武英殿 fit to mapped plan",
+      "passed": true,
+      "evidence": 0.9812290790582295
+    },
+    {
+      "check": "武英殿 walkable line from terrace through both halls",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "武英殿 expected ridge over mapped centre",
+      "passed": true,
+      "evidence": {
+        "saved_z_m": 13.400839805603027,
+        "specified_shell_z_m": 12.86,
+        "mesh": "黄琉璃瓦单檐歇山 · sculpted ridge, chiwen terminals "
+      }
+    },
+    {
+      "check": "敬思殿 expected ridge over mapped centre",
+      "passed": true,
+      "evidence": {
+        "saved_z_m": 12.290840148925781,
+        "specified_shell_z_m": 11.75,
+        "mesh": "黄琉璃瓦单檐歇山 · sculpted ridge, chiwen terminals"
+      }
+    },
+    {
+      "check": "武英殿 mesh payload survived reload",
+      "passed": true,
+      "evidence": 698352
+    }
+  ],
+  "passed": true,
+  "limits": "Geometry and map-fit checks. They do not establish exact survey agreement or photo identity."
+}

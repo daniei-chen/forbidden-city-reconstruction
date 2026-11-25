@@ -1,0 +1,340 @@
+{
+  "native_blend": "The_Forbidden_City_Imperial_Garden_Twins.blend",
+  "base_blend": "The_Forbidden_City_North_Garden_Revision.blend",
+  "collection": "御花园 · 万春亭、千秋亭",
+  "first_hand_sources": {
+    "palace_museum": "https://www.dpm.org.cn/explore/building/236521.html",
+    "figure_14_and_site_plan": "https://img.dpm.org.cn/Uploads/File/2020/04/08/u5e8d77d699010.pdf"
+  },
+  "pavilions": [
+    {
+      "name": "万春亭",
+      "collection": "万春亭 · 亚字平面和重檐圆攒尖",
+      "map_outline": "685673149",
+      "map_relation": "9515309",
+      "sources": {
+        "museum": "https://www.dpm.org.cn/explore/building/236521.html",
+        "plan_fig_14": "https://img.dpm.org.cn/Uploads/File/2020/04/08/u5e8d77d699010.pdf",
+        "plaque": "https://img.dpm.org.cn/Uploads/Picture/2020/04/20/s5e9d3c256d095.jpg",
+        "architecture_photo": "https://img.dpm.org.cn/Uploads/Picture/2020/04/20/s5e9d3c109fb73.jpg"
+      },
+      "map_dimensions": {
+        "lower_corner_extents": [
+          4.898601799228695,
+          4.928995083019249,
+          3.38,
+          3.25
+        ],
+        "upper_eave_radius_m": 3.8024519297413124,
+        "drum_mapped_diameter_m": 5.600779823855349,
+        "outer_timber_spans_m": [
+          10.435323332031656,
+          10.987144726011268
+        ],
+        "inner_timber_spans_m": [
+          6.648685478710522,
+          6.626044349355053
+        ],
+        "stone_platform_mapped_area_m2": 133.0253037332099,
+        "stairs_mapped_areas_m2": [
+          5.31029114182227,
+          5.047107020572792,
+          5.624016961962975,
+          5.189770983820443
+        ]
+      },
+      "reference_features": {
+        "annexes": 4,
+        "stairs": 4,
+        "roof": "lower square, upper round bamboo-joint tile",
+        "second_door_layer": true,
+        "ceiling_subject": "paired phoenix panels and gilded coiled dragon holding a pearl"
+      },
+      "model_estimates": {
+        "floor_z_m": 1.27,
+        "main_four_inner_posts_pitch_m": 6.66,
+        "outer_posts": 12,
+        "lower_eave_z_m": 6.61,
+        "upper_eave_z_m": 9.79,
+        "stairs": [
+          {
+            "side": 0,
+            "width_m": 1.776,
+            "run_m": 2.561,
+            "treads": 7,
+            "mapped_way": "685673161",
+            "local_centre_xy": [
+              -0.10629754051950113,
+              -7.791108687960415
+            ],
+            "start_end_y": [
+              -9.071840847242138,
+              -6.510376528678693
+            ]
+          },
+          {
+            "side": 1,
+            "width_m": 1.761,
+            "run_m": 2.45,
+            "treads": 7,
+            "mapped_way": "685673157",
+            "local_centre_xy": [
+              0.14589628610718475,
+              -7.481225754824234
+            ],
+            "start_end_y": [
+              -8.706211055352925,
+              -6.256240454295542
+            ]
+          },
+          {
+            "side": 2,
+            "width_m": 1.779,
+            "run_m": 2.703,
+            "treads": 7,
+            "mapped_way": "685673155",
+            "local_centre_xy": [
+              -0.10899145374252783,
+              -7.715976163568234
+            ],
+            "start_end_y": [
+              -9.0676707097753,
+              -6.364281617361169
+            ]
+          },
+          {
+            "side": 3,
+            "width_m": 1.762,
+            "run_m": 2.519,
+            "treads": 7,
+            "mapped_way": "685673160",
+            "local_centre_xy": [
+              -0.35738810087536216,
+              -7.3450655081338
+            ],
+            "start_end_y": [
+              -8.60453638816931,
+              -6.08559462809829
+            ]
+          }
+        ],
+        "interior": {
+          "documented_subjects": [
+            "paired phoenix",
+            "coiled dragon with pearl"
+          ],
+          "ceiling_z_m": 6.27,
+          "coffer_recess_m": 0.79,
+          "finish_note": "The two coffer palettes differ. Specific layout and decoration are estimates."
+        }
+      }
+    },
+    {
+      "name": "千秋亭",
+      "collection": "千秋亭 · 亚字平面和重檐圆攒尖",
+      "map_outline": "685673150",
+      "map_relation": "9515310",
+      "sources": {
+        "museum": "https://www.dpm.org.cn/explore/building/236521.html",
+        "plan_fig_14": "https://img.dpm.org.cn/Uploads/File/2020/04/08/u5e8d77d699010.pdf",
+        "plaque": "https://img.dpm.org.cn/Uploads/Picture/2020/04/20/s5e9d3cbc112ed.jpg",
+        "architecture_photo": "https://img.dpm.org.cn/Uploads/Picture/2020/04/20/s5e9d3ca8f21a5.jpg"
+      },
+      "map_dimensions": {
+        "lower_corner_extents": [
+          4.891719262069315,
+          4.931920990562519,
+          3.38,
+          3.25
+        ],
+        "upper_eave_radius_m": 3.802638237424155,
+        "drum_mapped_diameter_m": 5.603094568885833,
+        "outer_timber_spans_m": [
+          10.441662513404665,
+          10.984515618878284
+        ],
+        "inner_timber_spans_m": [
+          6.657283720939321,
+          6.625899321660703
+        ],
+        "stone_platform_mapped_area_m2": 133.04913626703447,
+        "stairs_mapped_areas_m2": [
+          5.3155604060741295,
+          5.060581105377395,
+          5.5958496868244225,
+          5.203292626387043
+        ]
+      },
+      "reference_features": {
+        "annexes": 4,
+        "stairs": 4,
+        "roof": "lower square, upper round bamboo-joint tile",
+        "second_door_layer": true,
+        "ceiling_subject": "paired phoenix panels and gilded coiled dragon holding a pearl"
+      },
+      "model_estimates": {
+        "floor_z_m": 1.27,
+        "main_four_inner_posts_pitch_m": 6.66,
+        "outer_posts": 12,
+        "lower_eave_z_m": 6.61,
+        "upper_eave_z_m": 9.79,
+        "stairs": [
+          {
+            "side": 0,
+            "width_m": 1.774,
+            "run_m": 2.56,
+            "treads": 7,
+            "mapped_way": "685673166",
+            "local_centre_xy": [
+              -0.10621511599468647,
+              -7.7871768675877275
+            ],
+            "start_end_y": [
+              -9.067139908749178,
+              -6.507213826426277
+            ]
+          },
+          {
+            "side": 1,
+            "width_m": 1.77,
+            "run_m": 2.449,
+            "treads": 7,
+            "mapped_way": "685673164",
+            "local_centre_xy": [
+              0.15989474818534022,
+              -7.48511292307793
+            ],
+            "start_end_y": [
+              -8.70971908317813,
+              -6.260506762977729
+            ]
+          },
+          {
+            "side": 2,
+            "width_m": 1.769,
+            "run_m": 2.703,
+            "treads": 7,
+            "mapped_way": "685673163",
+            "local_centre_xy": [
+              -0.10460792697646043,
+              -7.719878760018808
+            ],
+            "start_end_y": [
+              -9.071317508100433,
+              -6.3684400119371825
+            ]
+          },
+          {
+            "side": 3,
+            "width_m": 1.761,
+            "run_m": 2.526,
+            "treads": 7,
+            "mapped_way": "685673165",
+            "local_centre_xy": [
+              -0.3574624541668858,
+              -7.345334335108051
+            ],
+            "start_end_y": [
+              -8.608531071449024,
+              -6.082137598767079
+            ]
+          }
+        ],
+        "interior": {
+          "documented_subjects": [
+            "paired phoenix",
+            "coiled dragon with pearl"
+          ],
+          "ceiling_z_m": 6.27,
+          "coffer_recess_m": 0.79,
+          "finish_note": "The two coffer palettes differ. Specific layout and decoration are estimates."
+        }
+      }
+    }
+  ],
+  "replaced_map_objects": {
+    "685673151": [
+      "构件 · OSM 685673151"
+    ],
+    "685673152": [
+      "构件 · OSM 685673152",
+      "宫院屋面 · 三维瓦作 685673152"
+    ],
+    "685673153": [
+      "构件 · OSM 685673153",
+      "宫院屋面 · 三维瓦作 685673153"
+    ],
+    "685673154": [
+      "构件 · OSM 685673154",
+      "宫院屋面 · 三维瓦作 685673154"
+    ],
+    "685673155": [
+      "构件 · OSM 685673155"
+    ],
+    "685673156": [
+      "构件 · OSM 685673156"
+    ],
+    "685673157": [
+      "构件 · OSM 685673157"
+    ],
+    "685673158": [
+      "构件 · OSM 685673158",
+      "宫院屋面 · 三维瓦作 685673158"
+    ],
+    "685673159": [
+      "构件 · OSM 685673159"
+    ],
+    "685673160": [
+      "构件 · OSM 685673160"
+    ],
+    "685673161": [
+      "构件 · OSM 685673161"
+    ],
+    "685673162": [
+      "构件 · OSM 685673162"
+    ],
+    "685673163": [
+      "构件 · OSM 685673163"
+    ],
+    "685673164": [
+      "构件 · OSM 685673164"
+    ],
+    "685673165": [
+      "构件 · OSM 685673165"
+    ],
+    "685673166": [
+      "构件 · OSM 685673166"
+    ],
+    "685673167": [
+      "构件 · OSM 685673167"
+    ],
+    "685673168": [
+      "构件 · OSM 685673168"
+    ],
+    "685673169": [
+      "构件 · OSM 685673169"
+    ],
+    "685673170": [
+      "构件 · OSM 685673170"
+    ],
+    "685673171": [
+      "构件 · OSM 685673171",
+      "宫院屋面 · 三维瓦作 685673171"
+    ],
+    "685673173": [
+      "构件 · OSM 685673173",
+      "宫院屋面 · 三维瓦作 685673173"
+    ],
+    "685673176": [
+      "构件 · OSM 685673176",
+      "宫院屋面 · 三维瓦作 685673176"
+    ]
+  },
+  "new_editable_meshes": 138,
+  "new_native_polygons": 2103827,
+  "limits": [
+    "Map topology and drawn relative positions constrain the plan.",
+    "Original tile widths, section heights, wood carving and coating state are estimates.",
+    "Wall orientation, tile joints, and the physical openings are checked against the saved model."
+  ]
+}

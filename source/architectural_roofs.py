@@ -17,7 +17,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                beasts=0, grey=False, green=False, detail=1, terminal_height=None,
                soffit=True, eave_lift=None, sculpted=False, ridge_length=None,
                ridge_terminals=True, gable_ends=True, border_glaze=None,
-               pyramid_finial=True):
+               pyramid_finial=True, upper_rectangle=None):
     group=collection(name,target)
     substrate=pal.grey if grey else pal.green if green else pal.roof
     clay=border_glaze or (pal.grey_clay if grey else pal.green_clay if green else pal.tiles[1])
@@ -31,6 +31,12 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
         if not 0 < ridge_length <= width:
             raise ValueError('The ridge must fit within the roof width.')
         ridge_half=ridge_length/2
+    inner_depth=0.
+    if upper_rectangle is not None:
+        inner_width,depth_at_top=upper_rectangle
+        if kind!='hip' or not (0<inner_width<width and 0<depth_at_top<depth):
+            raise ValueError('A rectangular roof opening must fit inside a four-sided roof.')
+        ridge_half,inner_depth=inner_width/2,depth_at_top/2
     upturn=min(.84,depth*.044) if eave_lift is None else eave_lift
 
     def level(t,u):
@@ -49,16 +55,19 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
         tt=min(t/.38,1) if kind=="xieshan" else t
         return hw+(ridge_half-hw)*tt
 
+    def half_depth(t):
+        return hd+(inner_depth-hd)*t
+
     def position(side,u,t):
         if side<2:
             sgn=-1 if side==0 else 1
-            return Vector((u*half_span(t),sgn*hd*(1-t),level(t,u)))
+            return Vector((u*half_span(t),sgn*half_depth(t),level(t,u)))
         sgn=-1 if side==2 else 1
         if kind=="xieshan":
             xx=hw+(ridge_half-hw)*min(t/.38,1)
         else:
             xx=hw+(ridge_half-hw)*t
-        return Vector((sgn*xx,u*hd*(1-t),level(t,u)))
+        return Vector((sgn*xx,u*half_depth(t),level(t,u)))
 
     panels=(0,1) if straight_gable else (0,1,2,3)
     for side in panels:
@@ -100,7 +109,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
             count=max(1,round(2*span/pitch)); spacing=2*span/count
             nominal_rows=max(2,math.ceil((position(side,0,end)-position(side,0,0)).length/.42))
             def tile_position(offset,t):
-                across=half_span(t) if side<2 else hd*(1-t)
+                across=half_span(t) if side<2 else half_depth(t)
                 return position(side,max(-1.,min(1.,offset/max(across,1e-6))),t)
 
             def frame(offset,t):
@@ -118,7 +127,7 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                     offset=-span+spacing*(column+(.5 if is_cap else 1.0))
                     margin=abs(offset)+spacing*(.27 if is_cap else .38)
                     if side>=2:
-                        last=max(0.,1-margin/hd)
+                        last=end if margin<=inner_depth else max(0.,(hd-margin)/(hd-inner_depth))
                     elif straight_gable or margin<=ridge_half:
                         last=end
                     else:
@@ -174,11 +183,12 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                         q=p-tangent*.063
                         tiling.face([tuple(q-across*spacing*.32+normal*.04),tuple(q-normal*.115),
                                      tuple(q+across*spacing*.32+normal*.04)],clay)
-                    if soffit:
+                    if soffit and is_cap:
                         rafter_a=p-tangent*.09-Vector((0,0,.26))
-                        rafter_b=p+tangent*min(2.7,depth*.22)-Vector((0,0,.37))
-                        ridges.beam(rafter_a,rafter_b,.09,.12,pal.teal if column%2 else pal.blue)
-                        if is_cap and detail>1:
+                        inward=min(last*.84,.23,1.36/max(.01,(position(side,0,end)-position(side,0,0)).length))
+                        rafter_b=tile_position(offset,inward)-Vector((0,0,.30))
+                        ridges.beam(rafter_a,rafter_b,.083,.106,pal.teal if column%2 else pal.blue)
+                        if detail>1:
                             ridges.beam(rafter_a+tangent*.004,rafter_a-tangent*.020,.061,.069,pal.giltpaint)
 
     # Gable timber infill is present only above the lower hipped edge of a歇山顶.
@@ -237,15 +247,16 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
                     s=.62 if width>52 else .43 if width>33 else .28
                     ridge_guardian(ridges,tuple(p),sx,sy,s,clay,kind=k)
 
-    if stop>=.999:
+    if stop>=.999 and upper_rectangle is None:
         if pyramid and pyramid_finial:
             ridges.lathe(0,0,((.31,eave+rise-.02),(.25,eave+rise+.12),(.13,eave+rise+.20),
                               (.25,eave+rise+.43),(.19,eave+rise+.62),(.03,eave+rise+.82)),pal.gold,sides=18)
         elif not pyramid and kind!='juanpeng':
             z=eave+rise
-            ridges.box((0,0,z+.14),(2*ridge_half,.39,.36),clay)
-            ridges.box((0,0,z+.38),(2*ridge_half,.26,.15),clay)
-            ridges.path([(-ridge_half-.14,0,z+.46),(ridge_half+.14,0,z+.46)],.085,clay,sides=10)
+            m=min(1.,width/12.0)
+            ridges.box((0,0,z+.14*m),(2*ridge_half,.39*m,.36*m),clay)
+            ridges.box((0,0,z+.38*m),(2*ridge_half,.26*m,.15*m),clay)
+            ridges.path([(-ridge_half-.14*m,0,z+.46*m),(ridge_half+.14*m,0,z+.46*m)],.085*m,clay,sides=10)
             for end in ((-1,1) if ridge_terminals else ()):
                 height=terminal_height or (1.8 if width>40 else .97)
                 if sculpted:
@@ -258,7 +269,9 @@ def swept_roof(name, target, pal, *, origin=(0,0,0), yaw=0., width=20., depth=12
 
     shell_obj=shell.finish(name+" · curved ceramic shell and dark timber soffit",group)
     if shell_obj:
-        shell_obj["roof_type"]=kind
+        shell_obj["roof_type"]='rectangular_hip_skirt' if upper_rectangle else kind
+        if upper_rectangle:
+            shell_obj['roof_crest_plate_plan_m']=upper_rectangle
         shell_obj["geometry_units"]="metres"
     ridges.finish(name+" · sculpted ridge, chiwen terminals and roof guardians",group)
     tile_obj=tiling.finish(name+" · individually curved cylinder tiles, pan tiles and round eave seals",group)

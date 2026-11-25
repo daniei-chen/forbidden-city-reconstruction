@@ -1,5 +1,7 @@
 """Hollow ceiling and recessed caisson; photograph-led ornament, not scan data."""
 import math
+import os
+from pathlib import Path
 import bpy
 from shapely.geometry import box, Polygon
 from mesh_tools import Batch, object_to_mesh
@@ -133,7 +135,11 @@ def add_imperial_plaque(target,p,origin,yaw):
         b.box((sign*(w/2+.035),y-.10,z),(.13,.12,h+.22),p.door)
         b.box((0,y-.10,z+sign*(h/2+.035)),(w+.22,.12,.13),p.door)
     b.finish('太和殿 · 建極綏猷匾额立体框',target)
-    font=bpy.data.fonts.load('C:/Windows/Fonts/simkai.ttf',check_existing=True)
+    default_font=Path(os.environ.get('WINDIR','C:/Windows'))/'Fonts/simkai.ttf'
+    font_path=Path(os.environ.get('PALACE_CJK_FONT') or default_font)
+    if not font_path.is_file():
+        return
+    font=bpy.data.fonts.load(str(font_path),check_existing=True)
     for index,char in enumerate('建極綏猷'):
         curve=bpy.data.curves.new('内廷匾字 '+char,'FONT')
         curve.body=char;curve.font=font;curve.size=1.18

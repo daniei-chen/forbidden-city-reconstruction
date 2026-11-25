@@ -1,0 +1,214 @@
+{
+  "file": "The_Forbidden_City_Imperial_Garden_Revision.blend",
+  "passed": true,
+  "tests": [
+    {
+      "check": "Metric units",
+      "passed": true,
+      "evidence": 1.0
+    },
+    {
+      "check": "Prior native walkthrough retained: 浴德堂 · 穿过券道看穹顶",
+      "passed": true,
+      "evidence": 288
+    },
+    {
+      "check": "Prior native walkthrough retained: 文华殿 · 海棠甬路至檐下",
+      "passed": true,
+      "evidence": 240
+    },
+    {
+      "check": "Saved Chengrui camera preserves the checked native path",
+      "passed": true,
+      "evidence": {
+        "frames": 216,
+        "distance_m": 15.522
+      }
+    },
+    {
+      "check": "摛藻堂 north backdrop is a separate timber and roof assembly",
+      "passed": true,
+      "evidence": {
+        "mesh_objects": 6,
+        "removed": [
+          "擒藻堂 · OSM 40795239",
+          "擒藻堂 · 三维瓦作 40795239"
+        ]
+      }
+    },
+    {
+      "check": "位育斋 north backdrop is a separate timber and roof assembly",
+      "passed": true,
+      "evidence": {
+        "mesh_objects": 6,
+        "removed": [
+          "位育斋 · OSM 40795237",
+          "位育斋 · 三维瓦作 40795237"
+        ]
+      }
+    },
+    {
+      "check": "浮碧亭 generic geometry superseded",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "浮碧亭 documented three bays between square posts",
+      "passed": true,
+      "evidence": [
+        -4.0,
+        -1.56,
+        1.56,
+        4.0
+      ]
+    },
+    {
+      "check": "浮碧亭 bridge void connects across both stone faces",
+      "passed": true,
+      "evidence": {
+        "side_to_side_ray": null,
+        "crown_hit": [
+          "浮碧亭 · 单个贯通石拱券",
+          0.31
+        ]
+      }
+    },
+    {
+      "check": "浮碧亭 dry deck above recessed water",
+      "passed": true,
+      "evidence": {
+        "floor": [
+          "浮碧亭 · 青白石面砖、两步台阶与透雕栏板",
+          0.79
+        ],
+        "water": [
+          "浮碧亭 · 地图池口与独立水面",
+          -0.68
+        ],
+        "world_hit": "浮碧亭 · 地图池口与独立水面"
+      }
+    },
+    {
+      "check": "浮碧亭 octagonal well is vertically recessed above its surrounding ceiling",
+      "passed": true,
+      "evidence": {
+        "medallion": [
+          "浮碧亭 · 八方层叠缘枋与圆井",
+          5.247
+        ],
+        "ceiling": [
+          "浮碧亭 · 井口天花、罩面与斜升井壁",
+          4.68511
+        ]
+      }
+    },
+    {
+      "check": "浮碧亭 south porch and bridge centre are open at eye level",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "浮碧亭 actual green tile meshes and separate yellow borders",
+      "passed": true,
+      "evidence": [
+        [
+          "14 · 琉璃筒瓦 / fired glaze 3",
+          "15 · 板瓦 / warm occluded pan tile",
+          "御花园 · 旧蓝绿色琉璃"
+        ],
+        [
+          "14 · 琉璃筒瓦 / fired glaze 3",
+          "15 · 板瓦 / warm occluded pan tile",
+          "御花园 · 旧蓝绿色琉璃"
+        ]
+      ]
+    },
+    {
+      "check": "浮碧亭 saved mesh count",
+      "passed": true,
+      "evidence": 36
+    },
+    {
+      "check": "澄瑞亭 generic geometry superseded",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "澄瑞亭 documented three bays between square posts",
+      "passed": true,
+      "evidence": [
+        -4.0,
+        -1.56,
+        1.56,
+        4.0
+      ]
+    },
+    {
+      "check": "澄瑞亭 bridge void connects across both stone faces",
+      "passed": true,
+      "evidence": {
+        "side_to_side_ray": null,
+        "crown_hit": [
+          "澄瑞亭 · 单个贯通石拱券",
+          0.31
+        ]
+      }
+    },
+    {
+      "check": "澄瑞亭 dry deck above recessed water",
+      "passed": true,
+      "evidence": {
+        "floor": [
+          "澄瑞亭 · 青白石面砖、两步台阶与透雕栏板",
+          0.79
+        ],
+        "water": [
+          "澄瑞亭 · 地图池口与独立水面",
+          -0.68
+        ],
+        "world_hit": "澄瑞亭 · 地图池口与独立水面"
+      }
+    },
+    {
+      "check": "澄瑞亭 octagonal well is vertically recessed above its surrounding ceiling",
+      "passed": true,
+      "evidence": {
+        "medallion": [
+          "澄瑞亭 · 八方层叠缘枋与圆井",
+          5.247
+        ],
+        "ceiling": [
+          "澄瑞亭 · 井口天花、罩面与斜升井壁",
+          4.71352
+        ]
+      }
+    },
+    {
+      "check": "澄瑞亭 south porch and bridge centre are open at eye level",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "澄瑞亭 actual green tile meshes and separate yellow borders",
+      "passed": true,
+      "evidence": [
+        [
+          "14 · 琉璃筒瓦 / fired glaze 3",
+          "15 · 板瓦 / warm occluded pan tile",
+          "御花园 · 旧蓝绿色琉璃"
+        ],
+        [
+          "14 · 琉璃筒瓦 / fired glaze 3",
+          "15 · 板瓦 / warm occluded pan tile",
+          "御花园 · 旧蓝绿色琉璃"
+        ]
+      ]
+    },
+    {
+      "check": "澄瑞亭 saved mesh count",
+      "passed": true,
+      "evidence": 35
+    }
+  ],
+  "scope": "Checks native geometry, not accuracy against a site scan."
+}
