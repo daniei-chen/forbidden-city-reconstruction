@@ -2,11 +2,15 @@
 
 以公开测绘资料、地图轮廓和实景影像为依据，持续复原北京紫禁城的可编辑 Blender 三维模型、建筑细节与沉浸式漫游。
 
-**[下载可编辑的 Blender 工程](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/latest)**。用 Blender 4.5 打开 `.blend` 即可查看、测量和编辑，场景单位为米。主场景覆盖宫墙、护城河和宫院，可从顶部场景选择器切换到文华殿、浴德堂、澄瑞亭和堆秀山的四段漫游。
+**[下载最新可编辑的 Blender 工程](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/latest)**。用 Blender 4.5 打开 `.blend` 即可查看、测量和编辑，场景单位为米。v0.2.0 更新了协和门、熙和门与太和门广场庑房的交接，并加入熙和门南庑 40 秒、约 49.64 米的人眼檐廊漫游。主场景覆盖宫墙、护城河和宫院；顶部场景选择器还可切换其他建筑与漫游场景。
 
-[![千秋亭的亚字台基、踏道与重檐](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/download/v0.1.0/Qianqiu_Pavilion.png)](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.1.0)
+[![紫禁城三维复原全城鸟瞰](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/download/v0.2.0/Forbidden_City_Overview.png)](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0)
 
-公开工程收录了太和殿内景、文渊阁、文华殿和武英殿组群、浴德堂及御花园北部的细化模型。万春亭、千秋亭包含亚字台基、四面踏道、重檐与可仰视的藻井。公开版使用程序化材质和原生汉字匾额，保留照片作为考据来源；工程本身不包含原始照片和航拍文件。匾额的笔迹和满文暂未复原。
+[![协和门、熙和门与两侧庑房接合部](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/download/v0.2.0/Cross_Axis_Junctions.png)](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0)
+
+公开工程收录了太和殿内景、文渊阁、文华殿和武英殿组群、浴德堂、御花园北部及朝会门区的细化模型。万春亭、千秋亭包含亚字台基、四面踏道、重檐与可仰视的藻井。公开版将参考照片和航拍底图替换为程序化材质，并把可确认的匾额汉字转为网格；工程不包含原始照片、航拍文件或外链资源。匾额的笔迹和满文暂未复原。
+
+最新工程与重开检查报告见 [v0.2.0 发布页](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0)。本版 40 秒路线通过 960 帧文件回读检查；地面支撑和身体/头部净空检查继承自同路径的 v3 校验。路线展示和局部几何通过不代表全城实测或逐像素验收。
 
 ## 从源码重建基础场景
 
