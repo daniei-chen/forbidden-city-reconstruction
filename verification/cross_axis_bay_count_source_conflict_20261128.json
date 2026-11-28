@@ -1,0 +1,40 @@
+{
+  "reviewed_at": "2026-11-28T16:56:05.194897+08:00",
+  "new_source": {
+    "author": "孙大章",
+    "title": "清代的紫禁城",
+    "publication": "紫禁城",
+    "issue": "2020年第10期",
+    "url": "https://img.dpm.org.cn/Uploads/File/2020/10/23/u5f9255173a228.pdf",
+    "pdf_sha256": "726b52a6fc36cc5d6dfa5636de811239aadd8c6cb76bdd2b71973a422dbbf9e2",
+    "pdf_page_one_based": 6,
+    "printed_page": 55,
+    "reviewed_page_image": "source/references/cross_axis_galleries/qing_palace_reconstruction_2020_p06.png"
+  },
+  "findings": [
+    {
+      "source": "故宫博物院熙和门、协和门建筑页面",
+      "urls": [
+        "https://www.dpm.org.cn/explore/building/236567.html",
+        "https://www.dpm.org.cn/explore/building/236540.html"
+      ],
+      "published_bays_each_north_south_side": 11,
+      "evidence": "Previously archived and text-audited museum page snapshots."
+    },
+    {
+      "source": "孙大章《清代的紫禁城》印刷页55",
+      "published_current_bays_each_range": 13,
+      "historical_ming_bays_each_range": 10,
+      "evidence": "Downloaded source PDF text normalized for vertical whitespace; page 6 was rendered and visually read."
+    }
+  ],
+  "model_unchanged": true,
+  "current_model_long_range_bays": 11,
+  "unresolved": [
+    "Whether the 11/13 difference reflects count boundaries including gate junctions, historical states, or a source error is not established.",
+    "The unscaled explanatory plan is a historical comparative diagram, not a measured current bay grid.",
+    "No new measured gallery/gate floor-transition or roof-height dimension was obtained."
+  ],
+  "decision": "Retain the modeled long-range grid provisionally. Do not infer two extra bays or alter spacing without a measured plan that identifies each count boundary.",
+  "scope": "Additional conflicting evidence, not authorization to claim current dimensions surveyed; no photographic source is redistributed."
+}
