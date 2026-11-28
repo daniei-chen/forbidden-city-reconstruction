@@ -15,18 +15,18 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/daniei-chen/forbidden-city-reconstruction/releases/download/v0.2.0/Forbidden_City_Cross_Axis_Junctions_v4_Public.blend"><img src="docs/assets/download-model.svg" width="230" alt="下载可编辑 Blender 工程，约 1.35 GB" /></a>
+  <a href="https://github.com/daniei-chen/forbidden-city-reconstruction/releases/download/v0.2.1/Forbidden_City_Gallery_Fabric_v5_Public.blend"><img src="docs/assets/download-model.svg" width="230" alt="下载可编辑 Blender 工程，约 1.35 GB" /></a>
   <a href="https://github.com/daniei-chen/forbidden-city-reconstruction/releases/latest"><img src="docs/assets/view-release.svg" width="230" alt="查看最新版本与预览" /></a>
   <a href="verification/"><img src="docs/assets/read-verification.svg" width="230" alt="阅读建筑尺寸依据与校核记录" /></a>
 </p>
 
-<p align="center"><sub>当前公开版 v0.2.0 · Blender 4.5 LTS · 米制场景 · 原生可编辑工程</sub></p>
+<p align="center"><sub>当前公开版 v0.2.1 · Blender 4.5 LTS · 米制场景 · 原生可编辑工程</sub></p>
 
 ---
 
 ## 作品预览
 
-从全城格局，到宫门前庭、殿内空间与御花园。以下均为 **v0.2.0 公开工程的实际渲染**。
+从全城格局，到正面入城、殿内空间与御花园，再走入朱柱格扇之间。以下均为**公开工程的实际渲染**：图一至图五出自 v0.2.0，图六出自最新 v0.2.1。
 
 ### 城阙之间 · 全城格局
 
@@ -68,15 +68,23 @@
 
 <p align="center"><sub>图五 · 从踏道旁望向千秋亭，以完整亭身、白石台基与周围宫院，展示御花园里的建筑尺度。</sub></p>
 
-<p align="center"><sub>点击图二至图五可查看大图 · <a href="verification/readme_gallery_v0.2.0.json">查看出图记录</a></sub></p>
+### 廊下慢行 · 朱柱与格扇
+
+<a href="docs/assets/gallery-walk-v0.2.1.png">
+  <img src="docs/assets/gallery-walk-v0.2.1.png" width="100%" alt="v0.2.1公开工程实渲：熙和门南庑的人眼廊下视角，左侧朱漆格扇、右侧柱列与地面砖缝形成连续进深" />
+</a>
+
+<p align="center"><sub>图六 · v0.2.1 公开工程，1920×1080、128 samples 实际渲染。以人眼高度沿熙和门南庑望向门区，查看柱列、格扇、铺砖和自然阴影。</sub></p>
+
+<p align="center"><sub>点击图二至图六可查看大图 · <a href="docs/assets/gallery-paving-v0.2.1.png">另看铺砖与柱脚近景</a><br /><a href="verification/readme_gallery_v0.2.0.json">图二至图五出图记录</a> · <a href="verification/readme_gallery_v0.2.1.json">本轮廊下出图记录</a></sub></p>
 
 ## 入城指南
 
 | 当前公开版 | 打开环境 | 场景单位 | 本版廊下漫游 |
 | :--- | :--- | :--- | :--- |
-| **v0.2.0 · 朝会门区** | Blender 4.5 LTS | 1 Blender 单位 = 1 米 | 40 秒 · 约 49.64 米 |
+| **v0.2.1 · 廊下观物** | Blender 4.5 LTS | 1 Blender 单位 = 1 米 | 40 秒 · 约 49.64 米 |
 
-1. **下载工程**：打开 [v0.2.0 发布页](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0)，在 **Assets** 中下载 `Forbidden_City_Cross_Axis_Junctions_v4_Public.blend`，约 **1.35 GB**。
+1. **下载工程**：打开 [v0.2.1 发布页](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.1)，在 **Assets** 中下载 `Forbidden_City_Gallery_Fabric_v5_Public.blend`，约 **1.35 GB**。
 2. **进入宫城**：用 Blender 4.5 打开 `.blend`，可查看、测量和编辑原生模型。文件较大，载入需要等待。
 3. **切换视角**：在 Blender 顶部场景选择器中切换全城、局部建筑与漫游场景；选择“熙和门南庑 · 40秒慢行廊下漫游”，播放时间轴可查看这条已保存的相机路线。
 
@@ -84,7 +92,7 @@
 
 ## 本版营造
 
-**v0.2.0 着重完善协和门、熙和门与太和门广场庑房的交接。** 本版保留完整宫城场景，并加入熙和门南庑约 49.64 米、40 秒的人眼檐廊漫游。
+**v0.2.1 细修四段廊庑的铺砖与表面。** 本版保留完整宫城与21个场景，为6,543块铺砖加入1.2毫米几何倒角，以稳定的逐件属性补充砖瓦色泽、粗糙度与细微朱漆、石材响应。熙和门南庑保留约49.64米、40秒的人眼檐廊路线。
 
 | 区域 | 已收录内容 |
 | :--- | :--- |
@@ -92,10 +100,13 @@
 | **文华与武英殿组群** | 文华殿、文渊阁、武英殿组群与浴德堂的细化模型。 |
 | **御花园** | 北部建筑及万春亭、千秋亭的亚字台基、四面踏道、重檐与可仰视藻井。 |
 | **公开版表面与匾额** | 参考照片和航拍底图替换为程序化材质，可确认的匾额汉字转为网格；不包含原始照片、航拍文件或外链资源。 |
+| **本轮廊庑细修** | 四段铺砖真实倒角、逐砖逐瓦稳定差异，保留既有开间、地坪标高与全部原动画；材质细粒与磨损响应仍属解释性表现。 |
 
 公开工程与本地含研究照片的母版有表面材质差异。匾额笔迹与满文尚未复原，各处细部的完成程度也不一致。
 
-本版路线通过文件回读检查；地面支撑和身体、头部净空检查继承自同路径的 v3 校验。完整报告随 [Release 附件](https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0) 提供。
+公开文件本身已独立重开，核对原有建筑网格、位置与动画，并对全部960帧重新检查地面支撑、身体及头部净空和连续相机运动。检查范围限于已保存的南庑路线；[复验报告](verification/validation_gallery_fabric_public_v5.json)与[本轮修订说明](docs/gallery-fabric-v5.md)可查，原始失败记录与修正检查范围的过程也一并保留。
+
+当前保存的是完整40秒相机路线；同版逐帧渲染影片正在制作，只有完成编码与检查后才另行提供MP4。
 
 ## 工程与校核
 
@@ -108,6 +119,7 @@
 | [`requirements.txt`](requirements.txt) | Blender Python 环境所需的依赖。 |
 | [`source/prepare_public_release.py`](source/prepare_public_release.py) | 从已建成母版生成并校验无需外部素材的公开副本。 |
 | [`source/render_readme_gallery.py`](source/render_readme_gallery.py) | 从公开工程中渲染本页的午门、太和门、殿内与御花园视角。 |
+| [`docs/gallery-fabric-v5.md`](docs/gallery-fabric-v5.md) | 本轮表面改动、四段倒角求值、开间资料差异与校核范围。 |
 
 <details>
 <summary><strong>重建基础场景</strong> · 环境准备与命令</summary>
@@ -157,6 +169,8 @@ blender --background --factory-startup --python-exit-code 1 --python source/buil
 ## 资料与精度
 
 本项目区分**文献记载、地图轮廓与照片推定**。场景采用米制，并不表示全部构件均有现场实测值；局部几何与路线检查通过，也不代表全城已经完成真实 1:1 或逐像素验收。
+
+朝会门区仍有待查证之处：馆方建筑页面所记每侧11间，与2020年文章所记现状每段13间存在差异，计间边界尚未厘清；庑房与门台的地坪衔接也未取得完整测绘依据。[查看资料差异复核](verification/cross_axis_bay_count_source_conflict_20261128.json)。
 
 | 依据层次 | 在模型中的使用方式 |
 | :--- | :--- |
