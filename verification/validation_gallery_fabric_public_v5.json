@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "verified_at": "2026-11-28T16:58:18.491374+08:00",
+  "master": "The_Forbidden_City_Gallery_Fabric_v5.blend",
+  "master_sha256": "8a0cd7111c3fd8f48684546bb036b4355a43ca0e71e07675be7d6f20e9e8bbac",
+  "public": "Forbidden_City_Gallery_Fabric_v5_Public.blend",
+  "public_sha256": "21bb53599b6429a2c34f8b5a32029dfe8a06f6b8aeedf5acfd420e780a3a8b41",
+  "script_sha256": "eff75750894166db06eeb24f00e065aa6faa9385a2265469ee4d405b0b7f9ca6",
+  "build_report_sha256": "93892dd949d68c7a29e73b42b3ab2eeca6b37f8bd4dc8d1d605454124666a553",
+  "before_architecture": {
+    "objects": 12002,
+    "unique_meshes": 9333,
+    "sha256": "b873b5b3817a19642416e38357e3f0f6ec2499a36d06c1d7e6ce1d56daa84d05"
+  },
+  "after_architecture": {
+    "objects": 12002,
+    "unique_meshes": 9333,
+    "sha256": "b873b5b3817a19642416e38357e3f0f6ec2499a36d06c1d7e6ce1d56daa84d05"
+  },
+  "checks": {
+    "architectural_geometry_and_transforms_retained": true,
+    "native_animation_retained": true,
+    "no_linked_libraries": true,
+    "no_packed_or_external_source_images": true,
+    "no_external_file_dependencies": true,
+    "all_eight_per_piece_attributes_retained": true,
+    "reviewed_v5_material_graphs_retained": true,
+    "reviewed_v5_material_bindings_retained": true,
+    "four_paving_bevels_evaluate": true,
+    "all_960_native_route_frames_supported_and_clear": true
+  },
+  "bevels": [
+    {
+      "object": "协和门北庑长段 · 逐块廊下铺砖",
+      "owning_scene": "紫禁城 · metric architectural reconstruction",
+      "present_in_evaluated_scene": true,
+      "base_faces": 7867,
+      "evaluated_faces": 89585,
+      "width_m": 0.0012000000569969416,
+      "passed": true
+    },
+    {
+      "object": "协和门南庑长段 · 逐块廊下铺砖",
+      "owning_scene": "紫禁城 · metric architectural reconstruction",
+      "present_in_evaluated_scene": true,
+      "base_faces": 7676,
+      "evaluated_faces": 87445,
+      "width_m": 0.0012000000569969416,
+      "passed": true
+    },
+    {
+      "object": "熙和门北庑长段 · 逐块廊下铺砖",
+      "owning_scene": "紫禁城 · metric architectural reconstruction",
+      "present_in_evaluated_scene": true,
+      "base_faces": 8117,
+      "evaluated_faces": 92408,
+      "width_m": 0.0012000000569969416,
+      "passed": true
+    },
+    {
+      "object": "熙和门南庑长段 · 逐块廊下铺砖",
+      "owning_scene": "紫禁城 · metric architectural reconstruction",
+      "present_in_evaluated_scene": true,
+      "base_faces": 9106,
+      "evaluated_faces": 103727,
+      "width_m": 0.0012000000569969416,
+      "passed": true
+    }
+  ],
+  "route": {
+    "passed": true,
+    "frames": 960,
+    "native_collision_meshes": 21,
+    "floor_rays": 4800,
+    "body_rays": 11520,
+    "head_rays": 960,
+    "continuous_motion_rays": 959,
+    "floor_z_range_m": [
+      0.9969998598098755,
+      1.000000238418579
+    ],
+    "camera_checkpoints": [
+      [
+        1,
+        [
+          -109.34089660644531,
+          -465.4313049316406,
+          2.6500000953674316
+        ],
+        1.65
+      ],
+      [
+        240,
+        [
+          -109.1517562866211,
+          -453.0610046386719,
+          2.6520767211914062
+        ],
+        1.652077
+      ],
+      [
+        480,
+        [
+          -108.96182250976562,
+          -440.63897705078125,
+          2.647923231124878
+        ],
+        1.647923
+      ],
+      [
+        720,
+        [
+          -108.77188873291016,
+          -428.2169189453125,
+          2.6520767211914062
+        ],
+        1.652077
+      ],
+      [
+        960,
+        [
+          -108.58195495605469,
+          -415.7948913574219,
+          2.647923231124878
+        ],
+        1.647923
+      ]
+    ],
+    "failures": [],
+    "scope": "Ray-sampled support and clearance against the saved evaluated meshes, including paving bevels; not a complete human-volume or site-route certification."
+  },
+  "renders": [
+    {
+      "file": "exports\\github-v0.2.1\\previews\\gallery-walk-v0.2.1.png",
+      "sha256": "c602a2764387760a4b2f52f428170ea1384d6f3917507e212ead0043006b5a93",
+      "camera": "熙和门南庑 · 檐廊漫游相机",
+      "frame": 480,
+      "width": 1920,
+      "height": 1080,
+      "samples": 128,
+      "world": "北京晴空 · physical sky",
+      "exposure": 0.05000000074505806
+    },
+    {
+      "file": "exports\\github-v0.2.1\\previews\\gallery-paving-v0.2.1.png",
+      "sha256": "dcc5fef97f892c8ff4569a4e430e729c278334b219431842f9a094cb781de957",
+      "camera": "209 · 熙和门南庑 · 铺砖细棱与柱脚",
+      "frame": 480,
+      "width": 1920,
+      "height": 1080,
+      "samples": 128,
+      "world": "北京晴空 · physical sky",
+      "exposure": 0.05000000074505806
+    }
+  ],
+  "whole_city_pixel_perfect_reconstruction_proven": false,
+  "all_dimensions_surveyed": false,
+  "scope": "Saved-file integrity, reviewed local fabric retention and ray-sampled single-gallery navigation; not complete human-volume collision or site certification.",
+  "input_files_unchanged": true
+}

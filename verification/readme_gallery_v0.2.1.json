@@ -1,0 +1,39 @@
+{
+  "version": "v0.2.1",
+  "project": "Forbidden_City_Gallery_Fabric_v5_Public.blend",
+  "project_sha256": "21bb53599b6429a2c34f8b5a32029dfe8a06f6b8aeedf5acfd420e780a3a8b41",
+  "renders": [
+    {
+      "file": "exports\\github-v0.2.1\\previews\\gallery-walk-v0.2.1.png",
+      "sha256": "c602a2764387760a4b2f52f428170ea1384d6f3917507e212ead0043006b5a93",
+      "camera": "熙和门南庑 · 檐廊漫游相机",
+      "frame": 480,
+      "width": 1920,
+      "height": 1080,
+      "samples": 128,
+      "world": "北京晴空 · physical sky",
+      "exposure": 0.05000000074505806,
+      "repository_image": "docs/assets/gallery-walk-v0.2.1.png",
+      "render_input_was_public_edition": true
+    },
+    {
+      "file": "exports\\github-v0.2.1\\previews\\gallery-paving-v0.2.1.png",
+      "sha256": "dcc5fef97f892c8ff4569a4e430e729c278334b219431842f9a094cb781de957",
+      "camera": "209 · 熙和门南庑 · 铺砖细棱与柱脚",
+      "frame": 480,
+      "width": 1920,
+      "height": 1080,
+      "samples": 128,
+      "world": "北京晴空 · physical sky",
+      "exposure": 0.05000000074505806,
+      "repository_image": "docs/assets/gallery-paving-v0.2.1.png",
+      "render_input_was_public_edition": true
+    }
+  ],
+  "visual_review": {
+    "reviewed_at": "2026-11-28T17:05:18.574653+08:00",
+    "both_1920x1080_images_opened": true,
+    "scope": "Native static public-model views; gallery remains shaded and paving wear is inferred. No continuous-film review in this still-image record."
+  },
+  "whole_city_pixel_perfect_reconstruction_proven": false
+}
