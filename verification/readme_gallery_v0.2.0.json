@@ -1,0 +1,127 @@
+{
+  "release": "v0.2.0",
+  "purpose": "Visitor-scale architectural gallery for the GitHub README.",
+  "renderer": "Blender 4.5.16 / Cycles",
+  "script": "source/render_readme_gallery.py",
+  "command": "blender --background --factory-startup --python-exit-code 1 --python source/render_readme_gallery.py -- exports/github-v0.2.0/Forbidden_City_Cross_Axis_Junctions_v4_Public.blend renders/readme-gallery-v1 --width 1920 --samples 128",
+  "public_model_sha256": "ce3cd213793354af411b96241c275810c2ddfb5cb5992fa345275e798b8896ac",
+  "input_model_unchanged_after_render": true,
+  "existing_overview_image_unchanged": true,
+  "overview_image_sha256": "94bcd40d179acc91e9e11397d2d3ec63d61d83e4384f78314a58c54d63b63883",
+  "native_geometry_materials_lighting_preserved": true,
+  "new_images": [
+    {
+      "rendered_at": "2026-11-28T15:13:29.784759+08:00",
+      "project": "Forbidden_City_Cross_Axis_Junctions_v4_Public.blend",
+      "project_sha256": "ce3cd213793354af411b96241c275810c2ddfb5cb5992fa345275e798b8896ac",
+      "image": "wumen-entrance-v0.2.0.png",
+      "image_sha256": "1eaee64653cdf7173fbc116bb9890e57be237212b8cc788e0254af8e3ea66f6b",
+      "scene": "午门 · 穿过正门砖券看内金水河",
+      "camera": "105 · 午门 · 广庭内的人眼尺度",
+      "camera_location_m": [
+        -3.75,
+        -532.0,
+        1.7000000476837158
+      ],
+      "camera_lens_mm": 23.0,
+      "frame": 1,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "samples": 128,
+      "device": "GPU",
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "exposure_ev": 0.30000001192092896,
+      "native_public_geometry_materials_and_lights": true,
+      "input_model_saved": false,
+      "whole_city_pixel_perfect_reconstruction_proven": false
+    },
+    {
+      "rendered_at": "2026-11-28T15:13:47.516722+08:00",
+      "project": "Forbidden_City_Cross_Axis_Junctions_v4_Public.blend",
+      "project_sha256": "ce3cd213793354af411b96241c275810c2ddfb5cb5992fa345275e798b8896ac",
+      "image": "taihe-approach-v0.2.0.png",
+      "image_sha256": "b2936aa52171744e57cb5c6e617efe9b6161e7ef4a2e71f5032c2c3d0f839803",
+      "scene": "内金水桥 · 石券、栏板与人眼过桥",
+      "camera": "141 · 御桥南端看太和门",
+      "camera_location_m": [
+        -2.310443639755249,
+        -416.0450744628906,
+        1.6820000410079956
+      ],
+      "camera_lens_mm": 28.0,
+      "frame": 1,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "samples": 128,
+      "device": "GPU",
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "exposure_ev": 0.3499999940395355,
+      "native_public_geometry_materials_and_lights": true,
+      "input_model_saved": false,
+      "whole_city_pixel_perfect_reconstruction_proven": false
+    },
+    {
+      "rendered_at": "2026-11-28T15:31:24.377836+08:00",
+      "project": "Forbidden_City_Cross_Axis_Junctions_v4_Public.blend",
+      "project_sha256": "ce3cd213793354af411b96241c275810c2ddfb5cb5992fa345275e798b8896ac",
+      "image": "taihe-interior-v0.2.0.png",
+      "image_sha256": "7d0611733b5f3f2fb40d0c7516cc8308c8dc00a25bb210a4d6bdab9ba82b017f",
+      "scene": "紫禁城 · metric architectural reconstruction",
+      "camera": "10 · 太和殿御座正视 / interior ceremonial view",
+      "camera_location_m": [
+        -1.7000000476837158,
+        -105.0,
+        10.031999588012695
+      ],
+      "camera_lens_mm": 24.0,
+      "frame": 1,
+      "resolution": [
+        1920,
+        1440
+      ],
+      "samples": 128,
+      "device": "GPU",
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "exposure_ev": 0.4000000059604645,
+      "native_public_geometry_materials_and_lights": true,
+      "input_model_saved": false,
+      "whole_city_pixel_perfect_reconstruction_proven": false
+    },
+    {
+      "rendered_at": "2026-11-28T15:22:39.777187+08:00",
+      "project": "Forbidden_City_Cross_Axis_Junctions_v4_Public.blend",
+      "project_sha256": "ce3cd213793354af411b96241c275810c2ddfb5cb5992fa345275e798b8896ac",
+      "image": "qianqiu-pavilion-v0.2.0.png",
+      "image_sha256": "c8e5ba867b1d01c2e501dfa0d540fb2730df17f587f4443dd2f150617bfff1e7",
+      "scene": "紫禁城 · metric architectural reconstruction",
+      "camera": "57 · 千秋亭 · 从踏道仰望重檐",
+      "camera_location_m": [
+        -45.4007568359375,
+        363.4558410644531,
+        1.8300000429153442
+      ],
+      "camera_lens_mm": 33.0,
+      "frame": 1,
+      "resolution": [
+        1920,
+        1320
+      ],
+      "samples": 128,
+      "device": "GPU",
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "exposure_ev": 0.15000000596046448,
+      "native_public_geometry_materials_and_lights": true,
+      "input_model_saved": false,
+      "whole_city_pixel_perfect_reconstruction_proven": false
+    }
+  ],
+  "whole_city_pixel_perfect_reconstruction_proven": false
+}

@@ -26,6 +26,8 @@
 
 ## 作品预览
 
+从全城格局，到宫门前庭、殿内空间与御花园。以下均为 **v0.2.0 公开工程的实际渲染**。
+
 ### 城阙之间 · 全城格局
 
 <a href="https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0">
@@ -34,13 +36,39 @@
 
 <p align="center"><sub>图一 · v0.2.0 公开工程实际渲染。主场景包含宫墙、护城河与宫院；各区域的复原细度仍有差异。</sub></p>
 
-### 檐瓦相接 · 门庑近观
+### 午门正面 · 由此入城
 
-<a href="https://github.com/daniei-chen/forbidden-city-reconstruction/releases/tag/v0.2.0">
-  <img src="docs/assets/junctions-v0.2.0.png" width="100%" alt="v0.2.0 公开工程实渲近景：熙和门与庑房交接处的连续瓦面、梁枋、柱列及格扇" />
+<a href="docs/assets/wumen-entrance-v0.2.0.png">
+  <img src="docs/assets/wumen-entrance-v0.2.0.png" width="100%" alt="午门正面的人眼视角实渲：铺砖道路引向居中的门洞，朱红墩台上方是重檐正楼与两侧阙亭" />
 </a>
 
-<p align="center"><sub>图二 · 熙和门与庑房交接局部。瓦面、梁枋、柱列与格扇均来自本次公开工程，非实景照片。</sub></p>
+<p align="center"><sub>图二 · 在午门前庭正面望向宫门，视点接近人眼高度；从地面铺砖、门洞到重檐正楼，呈现入城时的空间关系。</sub></p>
+
+### 内金水桥 · 望向太和门
+
+<a href="docs/assets/taihe-approach-v0.2.0.png">
+  <img src="docs/assets/taihe-approach-v0.2.0.png" width="100%" alt="内金水桥上望向太和门的实渲：两侧白石栏板向前延伸，正面呈现太和门黄瓦重檐和登台石阶" />
+</a>
+
+<p align="center"><sub>图三 · 沿御桥望向太和门，以两侧石栏和桥面形成进深，展示前庭、踏道与宫门的完整关系。</sub></p>
+
+### 太和殿 · 殿内一望
+
+<a href="docs/assets/taihe-interior-v0.2.0.png">
+  <img src="docs/assets/taihe-interior-v0.2.0.png" width="100%" alt="太和殿内景实渲：从门内望向御座与围屏，两侧立柱及上方天花共同构成殿内空间" />
+</a>
+
+<p align="center"><sub>图四 · 从门内望向御座，呈现柱列、天花与藻井的层次。公开版使用程序化表面；陈设与雕刻仍含解释性重建。</sub></p>
+
+### 御花园 · 千秋亭全景
+
+<a href="docs/assets/qianqiu-pavilion-v0.2.0.png">
+  <img src="docs/assets/qianqiu-pavilion-v0.2.0.png" width="100%" alt="御花园千秋亭的完整建筑实渲：从踏道旁看白石台基、朱红柱窗、彩画梁枋与重檐圆顶" />
+</a>
+
+<p align="center"><sub>图五 · 从踏道旁望向千秋亭，以完整亭身、白石台基与周围宫院，展示御花园里的建筑尺度。</sub></p>
+
+<p align="center"><sub>点击图二至图五可查看大图 · <a href="verification/readme_gallery_v0.2.0.json">查看出图记录</a></sub></p>
 
 ## 入城指南
 
@@ -79,6 +107,7 @@
 | [`verification/`](verification/) | 各版建筑尺寸依据、模型参数及文件重开检查记录。 |
 | [`requirements.txt`](requirements.txt) | Blender Python 环境所需的依赖。 |
 | [`source/prepare_public_release.py`](source/prepare_public_release.py) | 从已建成母版生成并校验无需外部素材的公开副本。 |
+| [`source/render_readme_gallery.py`](source/render_readme_gallery.py) | 从公开工程中渲染本页的午门、太和门、殿内与御花园视角。 |
 
 <details>
 <summary><strong>重建基础场景</strong> · 环境准备与命令</summary>
