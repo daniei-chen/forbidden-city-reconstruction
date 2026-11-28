@@ -264,8 +264,9 @@ def prepare():
     for text in list(bpy.data.texts):
         bpy.data.texts.remove(text)
     bpy.data.texts.new('先读我 · 紫禁城公开工程').write(
-        '北京紫禁城 · 米制三维重建 · 御花园版\n\n'
-        '使用 Blender 4.5 打开。主场景可编辑、测量。由顶部场景选择器切换四条漫游路线。\n'
+        '北京紫禁城 · 米制建筑复原与漫游\n\n'
+        '使用 Blender 4.5 打开。主场景可编辑、测量。由顶部场景选择器切换建筑与漫游场景。\n'
+        '选择“熙和门南庑 · 40秒慢行廊下漫游”，播放时间轴可查看已保存的相机路线。\n'
         '匾额汉字已经转为网格，未复刻的满文及笔迹不作为考据依据。材质不含摄影贴图或航拍底图。\n'
         '地理底稿：© OpenStreetMap 贡献者，ODbL 1.0。https://www.openstreetmap.org/copyright\n'
         '地图轮廓、刊载尺寸与推定构件的区别，见仓库 README 和校核记录。\n' + REPOSITORY + '\n')
@@ -353,6 +354,8 @@ def main():
         return
     if path == Path(bpy.data.filepath).resolve():
         parser.error('Output must be different from the source project.')
+    if path.exists() and not args.verify_existing:
+        parser.error('Preserve the existing public edition; choose a new output path.')
     path.parent.mkdir(parents=True, exist_ok=True)
     source_path = Path(bpy.data.filepath).resolve()
     source_hash = file_sha256(source_path)

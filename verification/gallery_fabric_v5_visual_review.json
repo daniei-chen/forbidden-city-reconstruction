@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-11-28T16:33:34.696862+08:00",
+  "master_sha256": "8a0cd7111c3fd8f48684546bb036b4355a43ca0e71e07675be7d6f20e9e8bbac",
+  "opened_full_resolution_images": [
+    "renders\\gallery_fabric_v5_verified\\walk_0001.png",
+    "renders\\gallery_fabric_v5_verified\\walk_0240.png",
+    "renders\\gallery_fabric_v5_verified\\walk_0480.png",
+    "renders\\gallery_fabric_v5_verified\\walk_0720.png",
+    "renders\\gallery_fabric_v5_verified\\walk_0960.png",
+    "renders\\gallery_fabric_v5_verified\\paving.png",
+    "renders\\gallery_fabric_v5_verified\\lacquer.png",
+    "renders\\gallery_fabric_v5_verified\\glaze.png"
+  ],
+  "all_eight_image_hashes_verified": true,
+  "observations": [
+    "Five route checkpoints show the saved progression along the same porch; no visible camera penetration in those five images.",
+    "The final checkpoint approaches the existing gate-platform wall and does not traverse it.",
+    "The paving close view shows separated joints, restrained edge highlights and low-contrast mineral variation.",
+    "Lacquer and under-eave close views are dark; detailed carved patterns, actual site wear and hidden interiors are not reproduced.",
+    "The roof inspection view shows the retained continuous tile layout and restrained per-piece variation; it is a technical view rather than the lead gallery image."
+  ],
+  "limitations": [
+    "Eight stills are not a complete animation playback or temporal-flicker review.",
+    "Local visual consistency is not photorealism or whole-city 1:1 verification."
+  ],
+  "geometry_recheck_required": true,
+  "continuous_video_review_complete": false
+}

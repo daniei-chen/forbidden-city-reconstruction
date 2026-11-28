@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "scene": "熙和门南庑 · 40秒慢行廊下漫游",
+      "object": "协和门北庑长段 · 逐块廊下铺砖",
+      "in_scene": false,
+      "base_faces": 7867,
+      "evaluated_faces": 7867,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "熙和门南庑 · 40秒慢行廊下漫游",
+      "object": "协和门南庑长段 · 逐块廊下铺砖",
+      "in_scene": false,
+      "base_faces": 7676,
+      "evaluated_faces": 7676,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "熙和门南庑 · 40秒慢行廊下漫游",
+      "object": "熙和门北庑长段 · 逐块廊下铺砖",
+      "in_scene": false,
+      "base_faces": 8117,
+      "evaluated_faces": 8117,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "熙和门南庑 · 40秒慢行廊下漫游",
+      "object": "熙和门南庑长段 · 逐块廊下铺砖",
+      "in_scene": true,
+      "base_faces": 9106,
+      "evaluated_faces": 103727,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "紫禁城 · metric architectural reconstruction",
+      "object": "协和门北庑长段 · 逐块廊下铺砖",
+      "in_scene": true,
+      "base_faces": 7867,
+      "evaluated_faces": 89585,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "紫禁城 · metric architectural reconstruction",
+      "object": "协和门南庑长段 · 逐块廊下铺砖",
+      "in_scene": true,
+      "base_faces": 7676,
+      "evaluated_faces": 87445,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "紫禁城 · metric architectural reconstruction",
+      "object": "熙和门北庑长段 · 逐块廊下铺砖",
+      "in_scene": true,
+      "base_faces": 8117,
+      "evaluated_faces": 92408,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    },
+    {
+      "scene": "紫禁城 · metric architectural reconstruction",
+      "object": "熙和门南庑长段 · 逐块廊下铺砖",
+      "in_scene": true,
+      "base_faces": 9106,
+      "evaluated_faces": 103727,
+      "modifier_width_m": 0.0012000000569969416,
+      "modifier_viewport": true,
+      "modifier_render": true
+    }
+  ],
+  "model_saved": false
+}

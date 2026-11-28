@@ -1,0 +1,262 @@
+{
+  "audited_at": "2026-11-28T00:29:50.685376+08:00",
+  "official_text_matches": [
+    {
+      "file": "source\\references\\cross_axis_galleries\\xihe_gate_official_20261128.plain.txt",
+      "sha256": "93b1ca7512a4ed1fd61578f3a0270a693b4434cf44141e8ef614ffaff9935de0",
+      "bay_count_match": "南北两侧各有11间庑房，黄琉璃瓦顶，",
+      "has_front_porch": true,
+      "has_rear_fire_eave": true,
+      "explicitly_names_xuan_shan_gallery_roof": false
+    },
+    {
+      "file": "source\\references\\cross_axis_galleries\\xiehe_gate_official_20261128.plain.txt",
+      "sha256": "bb9ad5a387979012511530d18c41395872f72ff5bcaec626aab8763166330cc3",
+      "bay_count_match": "南北两侧各有11间庑房，黄琉璃瓦顶，",
+      "has_front_porch": true,
+      "has_rear_fire_eave": true,
+      "explicitly_names_xuan_shan_gallery_roof": false
+    }
+  ],
+  "plans": [
+    {
+      "key": "xihe_south",
+      "name": "熙和门南庑长段",
+      "gate": "熙和门",
+      "gate_body": "638218837",
+      "turn": 0,
+      "relation": "8850524",
+      "body": "638218812",
+      "deck": "638218845",
+      "roofs": [
+        "638218802",
+        "638218804",
+        "638218805"
+      ],
+      "local_bounds_m": [
+        -78.16967278935319,
+        -4.645871364523314,
+        -17.527463948223218,
+        4.731531826853411
+      ],
+      "location_m_and_radians": [
+        -111.20778501992828,
+        -392.22452739135406,
+        1.5555074927986765
+      ],
+      "bay_count_working_interpretation": 11,
+      "column_grid_x_m": [
+        -77.82967278935318,
+        -72.378562894705,
+        -66.92745300005683,
+        -61.476343105408645,
+        -56.02523321076046,
+        -50.574123316112285,
+        -45.12301342146411,
+        -39.671903526815925,
+        -34.22079363216775,
+        -28.769683737519564,
+        -23.318573842871388,
+        -17.86746394822321
+      ],
+      "front_post_y_m": -4.085871364523314,
+      "setback_facade_y_m": -1.8858713645233136,
+      "rear_fire_wall_y_m": 4.431531826853411,
+      "clear_porch_setback_m": 2.2,
+      "map_estimated_floor_m": 1.0,
+      "map_estimated_outer_eave_m": 7.0,
+      "authored_ridge_shell_m": 10.455,
+      "inferred_post_top_m": 6.12,
+      "status": "Museum: eleven bays per side, yellow glazed roof, front porch, rear fire-protected eave. Eleven bays assigned to each long mapped range provisionally; short gate-adjoining pieces are excluded and their count membership is unresolved. Footprints and 1 m deck / 7 m eave / 11 m ridge are inherited map estimates. Exact spans, porch setback, member sections, fire-eave detail, joinery, finishes and individual window pattern are interpretations. Hollow room shells are unfurnished, not surveyed interiors."
+    },
+    {
+      "key": "xihe_north",
+      "name": "熙和门北庑长段",
+      "gate": "熙和门",
+      "gate_body": "638218837",
+      "turn": 0,
+      "relation": "8850523",
+      "body": "638218791",
+      "deck": "638218840",
+      "roofs": [
+        "638218786",
+        "638218784",
+        "638218775"
+      ],
+      "local_bounds_m": [
+        18.613229240402855,
+        -4.492950758577479,
+        76.19705547941298,
+        5.13662622631654
+      ],
+      "location_m_and_radians": [
+        -111.20778501992828,
+        -392.22452739135406,
+        1.5555074927986765
+      ],
+      "bay_count_working_interpretation": 11,
+      "column_grid_x_m": [
+        18.953229240402855,
+        24.12630435304014,
+        29.299379465677426,
+        34.472454578314704,
+        39.64552969095199,
+        44.818604803589274,
+        49.99167991622656,
+        55.164755028863844,
+        60.33783014150113,
+        65.51090525413841,
+        70.6839803667757,
+        75.85705547941298
+      ],
+      "front_post_y_m": -3.9329507585774786,
+      "setback_facade_y_m": -1.7329507585774784,
+      "rear_fire_wall_y_m": 4.8366262263165405,
+      "clear_porch_setback_m": 2.2,
+      "map_estimated_floor_m": 1.0,
+      "map_estimated_outer_eave_m": 7.0,
+      "authored_ridge_shell_m": 10.455,
+      "inferred_post_top_m": 6.12,
+      "status": "Museum: eleven bays per side, yellow glazed roof, front porch, rear fire-protected eave. Eleven bays assigned to each long mapped range provisionally; short gate-adjoining pieces are excluded and their count membership is unresolved. Footprints and 1 m deck / 7 m eave / 11 m ridge are inherited map estimates. Exact spans, porch setback, member sections, fire-eave detail, joinery, finishes and individual window pattern are interpretations. Hollow room shells are unfurnished, not surveyed interiors."
+    },
+    {
+      "key": "xiehe_north",
+      "name": "协和门北庑长段",
+      "gate": "协和门",
+      "gate_body": "638238329",
+      "turn": 1,
+      "relation": "8850778",
+      "body": "638238383",
+      "deck": "638238323",
+      "roofs": [
+        "638238391",
+        "638238333",
+        "638238389"
+      ],
+      "local_bounds_m": [
+        -75.52066531669313,
+        -5.002122491783478,
+        -18.63998333058281,
+        4.617608084690374
+      ],
+      "location_m_and_radians": [
+        105.72792863494915,
+        -391.70969828891725,
+        -1.5860567964657537
+      ],
+      "bay_count_working_interpretation": 11,
+      "column_grid_x_m": [
+        -75.18066531669312,
+        -70.07151240886492,
+        -64.9623595010367,
+        -59.85320659320849,
+        -54.74405368538028,
+        -49.63490077755207,
+        -44.52574786972386,
+        -39.41659496189565,
+        -34.30744205406744,
+        -29.198289146239226,
+        -24.089136238411015,
+        -18.979983330582805
+      ],
+      "front_post_y_m": -4.442122491783477,
+      "setback_facade_y_m": -2.2421224917834772,
+      "rear_fire_wall_y_m": 4.317608084690375,
+      "clear_porch_setback_m": 2.2,
+      "map_estimated_floor_m": 1.0,
+      "map_estimated_outer_eave_m": 7.0,
+      "authored_ridge_shell_m": 10.455,
+      "inferred_post_top_m": 6.12,
+      "status": "Museum: eleven bays per side, yellow glazed roof, front porch, rear fire-protected eave. Eleven bays assigned to each long mapped range provisionally; short gate-adjoining pieces are excluded and their count membership is unresolved. Footprints and 1 m deck / 7 m eave / 11 m ridge are inherited map estimates. Exact spans, porch setback, member sections, fire-eave detail, joinery, finishes and individual window pattern are interpretations. Hollow room shells are unfurnished, not surveyed interiors."
+    },
+    {
+      "key": "xiehe_south",
+      "name": "协和门南庑长段",
+      "gate": "协和门",
+      "gate_body": "638238329",
+      "turn": 1,
+      "relation": "8850777",
+      "body": "638238358",
+      "deck": "638238324",
+      "roofs": [
+        "638238338",
+        "638238330",
+        "638238328"
+      ],
+      "local_bounds_m": [
+        17.50621008614032,
+        -4.711023183499569,
+        78.16640375703751,
+        4.600057240335526
+      ],
+      "location_m_and_radians": [
+        105.72792863494915,
+        -391.70969828891725,
+        -1.5860567964657537
+      ],
+      "bay_count_working_interpretation": 11,
+      "column_grid_x_m": [
+        17.84621008614032,
+        23.29895496531279,
+        28.751699844485266,
+        34.20444472365774,
+        39.65718960283021,
+        45.10993448200268,
+        50.56267936117516,
+        56.01542424034763,
+        61.4681691195201,
+        66.92091399869257,
+        72.37365887786504,
+        77.82640375703751
+      ],
+      "front_post_y_m": -4.15102318349957,
+      "setback_facade_y_m": -1.9510231834995695,
+      "rear_fire_wall_y_m": 4.300057240335526,
+      "clear_porch_setback_m": 2.2,
+      "map_estimated_floor_m": 1.0,
+      "map_estimated_outer_eave_m": 7.0,
+      "authored_ridge_shell_m": 10.455,
+      "inferred_post_top_m": 6.12,
+      "status": "Museum: eleven bays per side, yellow glazed roof, front porch, rear fire-protected eave. Eleven bays assigned to each long mapped range provisionally; short gate-adjoining pieces are excluded and their count membership is unresolved. Footprints and 1 m deck / 7 m eave / 11 m ridge are inherited map estimates. Exact spans, porch setback, member sections, fire-eave detail, joinery, finishes and individual window pattern are interpretations. Hollow room shells are unfurnished, not surveyed interiors."
+    }
+  ],
+  "candidate_replacement_names": [
+    "宫院屋面 · 三维瓦作 638218775",
+    "宫院屋面 · 三维瓦作 638218784",
+    "宫院屋面 · 三维瓦作 638218786",
+    "宫院屋面 · 三维瓦作 638218802",
+    "宫院屋面 · 三维瓦作 638218804",
+    "宫院屋面 · 三维瓦作 638218805",
+    "宫院屋面 · 三维瓦作 638238328",
+    "宫院屋面 · 三维瓦作 638238330",
+    "宫院屋面 · 三维瓦作 638238333",
+    "宫院屋面 · 三维瓦作 638238338",
+    "宫院屋面 · 三维瓦作 638238389",
+    "宫院屋面 · 三维瓦作 638238391",
+    "构件 · OSM 638218775",
+    "构件 · OSM 638218784",
+    "构件 · OSM 638218786",
+    "构件 · OSM 638218791",
+    "构件 · OSM 638218802",
+    "构件 · OSM 638218804",
+    "构件 · OSM 638218805",
+    "构件 · OSM 638218812",
+    "构件 · OSM 638218840",
+    "构件 · OSM 638218845",
+    "构件 · OSM 638238323",
+    "构件 · OSM 638238324",
+    "构件 · OSM 638238328",
+    "构件 · OSM 638238330",
+    "构件 · OSM 638238333",
+    "构件 · OSM 638238338",
+    "构件 · OSM 638238358",
+    "构件 · OSM 638238383",
+    "构件 · OSM 638238389",
+    "构件 · OSM 638238391"
+  ],
+  "candidate_replacement_objects": 32,
+  "short_gate_junctions_in_replacement": false,
+  "status": "Museum: eleven bays per side, yellow glazed roof, front porch, rear fire-protected eave. Eleven bays assigned to each long mapped range provisionally; short gate-adjoining pieces are excluded and their count membership is unresolved. Footprints and 1 m deck / 7 m eave / 11 m ridge are inherited map estimates. Exact spans, porch setback, member sections, fire-eave detail, joinery, finishes and individual window pattern are interpretations. Hollow room shells are unfurnished, not surveyed interiors.",
+  "all_dimensions_surveyed": false,
+  "whole_city_goal_complete": false
+}

@@ -1,0 +1,23 @@
+{
+  "reviewed_at": "2026-11-28T16:13:45.953657+08:00",
+  "local_sources_reviewed": [
+    {
+      "file": "source/references/cross_axis_galleries/taihe_east_west_ranges_1983.pdf",
+      "visible_source_page_label": "22",
+      "figure_or_text": "太和门东西朝房，周苏琴；附西朝房历史照片与用途说明",
+      "new_metric_gallery_floor_or_gate_transition_dimensions_found": false
+    },
+    {
+      "file": "source/references/cross_axis_galleries/ming_qing_roof_junctions_2020.pdf",
+      "visible_source_page_label": "138",
+      "figure_or_text": "图十六、图十七的门庑衔接照片；可见檐口、彩画与墙面关系",
+      "new_metric_gallery_floor_or_gate_transition_dimensions_found": false
+    }
+  ],
+  "adopted_changes": "Surface refinement only in v5; no dimensions imported from these photographs.",
+  "still_unresolved": [
+    "Real gallery/gate terrace level connection",
+    "Membership of the gate-adjoining short pieces in the eleven-bay description",
+    "Measured member sections, exact tile dimensions, conserved finish response and interior furnishing"
+  ]
+}

@@ -1,0 +1,41 @@
+﻿range,field,value,evidence_status
+熙和门南庑长段,published_bays_per_side,11,Published; correspondence to separate map parts unresolved
+熙和门南庑长段,authored_bays_in_long_range,11,Provisional count boundary interpretation
+熙和门南庑长段,long_range_envelope_length_m,60.64220884112997,Map footprint estimate
+熙和门南庑长段,long_range_envelope_depth_m,9.377403191376725,Map footprint estimate
+熙和门南庑长段,floor_m,1.0,"Retained source-map height, not surveyed"
+熙和门南庑长段,outer_eave_m,7.0,"Retained source-map height, not surveyed"
+熙和门南庑长段,ridge_cap_target_nominal_m,11.0,"Authored nominal source-map target; exact saved cap bounds are in the native inventory, not a survey"
+熙和门南庑长段,front_porch_setback_m,2.2,"Inferred from visible porch organization, not measured"
+熙和门南庑长段,post_top_m,6.12,Inferred structural/model level
+熙和门南庑长段,window_leaves_per_bay,4,"Visible motif interpreted and repeated, not a complete survey"
+熙和门北庑长段,published_bays_per_side,11,Published; correspondence to separate map parts unresolved
+熙和门北庑长段,authored_bays_in_long_range,11,Provisional count boundary interpretation
+熙和门北庑长段,long_range_envelope_length_m,57.58382623901012,Map footprint estimate
+熙和门北庑长段,long_range_envelope_depth_m,9.629576984894019,Map footprint estimate
+熙和门北庑长段,floor_m,1.0,"Retained source-map height, not surveyed"
+熙和门北庑长段,outer_eave_m,7.0,"Retained source-map height, not surveyed"
+熙和门北庑长段,ridge_cap_target_nominal_m,11.0,"Authored nominal source-map target; exact saved cap bounds are in the native inventory, not a survey"
+熙和门北庑长段,front_porch_setback_m,2.2,"Inferred from visible porch organization, not measured"
+熙和门北庑长段,post_top_m,6.12,Inferred structural/model level
+熙和门北庑长段,window_leaves_per_bay,4,"Visible motif interpreted and repeated, not a complete survey"
+协和门北庑长段,published_bays_per_side,11,Published; correspondence to separate map parts unresolved
+协和门北庑长段,authored_bays_in_long_range,11,Provisional count boundary interpretation
+协和门北庑长段,long_range_envelope_length_m,56.88068198611032,Map footprint estimate
+协和门北庑长段,long_range_envelope_depth_m,9.619730576473852,Map footprint estimate
+协和门北庑长段,floor_m,1.0,"Retained source-map height, not surveyed"
+协和门北庑长段,outer_eave_m,7.0,"Retained source-map height, not surveyed"
+协和门北庑长段,ridge_cap_target_nominal_m,11.0,"Authored nominal source-map target; exact saved cap bounds are in the native inventory, not a survey"
+协和门北庑长段,front_porch_setback_m,2.2,"Inferred from visible porch organization, not measured"
+协和门北庑长段,post_top_m,6.12,Inferred structural/model level
+协和门北庑长段,window_leaves_per_bay,4,"Visible motif interpreted and repeated, not a complete survey"
+协和门南庑长段,published_bays_per_side,11,Published; correspondence to separate map parts unresolved
+协和门南庑长段,authored_bays_in_long_range,11,Provisional count boundary interpretation
+协和门南庑长段,long_range_envelope_length_m,60.66019367089719,Map footprint estimate
+协和门南庑长段,long_range_envelope_depth_m,9.311080423835095,Map footprint estimate
+协和门南庑长段,floor_m,1.0,"Retained source-map height, not surveyed"
+协和门南庑长段,outer_eave_m,7.0,"Retained source-map height, not surveyed"
+协和门南庑长段,ridge_cap_target_nominal_m,11.0,"Authored nominal source-map target; exact saved cap bounds are in the native inventory, not a survey"
+协和门南庑长段,front_porch_setback_m,2.2,"Inferred from visible porch organization, not measured"
+协和门南庑长段,post_top_m,6.12,Inferred structural/model level
+协和门南庑长段,window_leaves_per_bay,4,"Visible motif interpreted and repeated, not a complete survey"
